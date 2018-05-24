@@ -1,0 +1,1388 @@
+<HTML>
+
+<HEAD>
+<TITLE>Simulator report for Lab3</TITLE>
+</HEAD>
+
+<BODY>
+
+<A NAME="top"></A>
+
+<CENTER>
+<H1>Simulator report for Lab3</H1>
+<H3>Tue Oct 10 15:41:04 2017<BR>
+Quartus II Version 9.0 Build 184 04/29/2009 Service Pack 1 SJ Web Edition</H3>
+</CENTER>
+
+<P><HR></P>
+<TABLE WIDTH="100%" BORDER="0"><TR VALIGN="TOP">
+<TD><H2>Table of Contents</H2></TD>
+<TD ALIGN="RIGHT"><A HREF="#top">Top</a></TD></TR></TABLE>
+<OL>
+<LI><A HREF="#1">Legal Notice</A></LI>
+<LI><A HREF="#2">Simulator Summary</A></LI>
+<LI><A HREF="#3">Simulator Settings</A></LI>
+<LI><A HREF="#4">Simulation Waveforms</A></LI>
+<LI><A HREF="#5">Coverage Summary</A></LI>
+<LI><A HREF="#6">Complete 1/0-Value Coverage</A></LI>
+<LI><A HREF="#7">Missing 1-Value Coverage</A></LI>
+<LI><A HREF="#8">Missing 0-Value Coverage</A></LI>
+<LI><A HREF="#9">Simulator INI Usage</A></LI>
+<LI><A HREF="#10">Simulator Messages</A></LI>
+</OL>
+
+<P><A NAME="1"><HR></A></P>
+<TABLE WIDTH="100%" BORDER="0"><TR VALIGN="TOP">
+<TD><H2>Legal Notice</H2></TD>
+<TD ALIGN="RIGHT"><A HREF="#top">Top</a></TD></TR></TABLE>
+<PRE>Copyright (C) 1991-2009 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+</PRE>
+
+<P><A NAME="2"><HR></A></P>
+<TABLE WIDTH="100%" BORDER="0"><TR VALIGN="TOP">
+<TD><H2>Simulator Summary</H2></TD>
+<TD ALIGN="RIGHT"><A HREF="#top">Top</a></TD></TR></TABLE>
+<TABLE BORDER="1" cellspacing="1" cellpadding="2">
+<TR valign="middle" bgcolor="#C0C0C0">
+<TH>Type</TH>
+<TH>Value</TH>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">Simulation Start Time</TD>
+<TD ALIGN="LEFT">0 ps</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">Simulation End Time</TD>
+<TD ALIGN="LEFT">500.0 us</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">Simulation Netlist Size</TD>
+<TD ALIGN="LEFT">136 nodes</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">Simulation Coverage</TD>
+<TD ALIGN="LEFT">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;53.85 %</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">Total Number of Transitions</TD>
+<TD ALIGN="LEFT">906472</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">Simulation Breakpoints</TD>
+<TD ALIGN="LEFT">0</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">Family</TD>
+<TD ALIGN="LEFT">Stratix II</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">Device</TD>
+<TD ALIGN="LEFT">EP2S15F484C3</TD>
+</TR>
+</TABLE>
+<P><A NAME="3"><HR></A></P>
+<TABLE WIDTH="100%" BORDER="0"><TR VALIGN="TOP">
+<TD><H2>Simulator Settings</H2></TD>
+<TD ALIGN="RIGHT"><A HREF="#top">Top</a></TD></TR></TABLE>
+<TABLE BORDER="1" cellspacing="1" cellpadding="2">
+<TR valign="middle" bgcolor="#C0C0C0">
+<TH>Option</TH>
+<TH>Setting</TH>
+<TH>Default Value</TH>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">Simulation mode</TD>
+<TD ALIGN="LEFT">Timing</TD>
+<TD ALIGN="LEFT">Timing</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">Start time</TD>
+<TD ALIGN="LEFT">0 ns</TD>
+<TD ALIGN="LEFT">0 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">Simulation results format</TD>
+<TD ALIGN="LEFT">CVWF</TD>
+<TD ALIGN="LEFT">&nbsp;</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">Vector input source</TD>
+<TD ALIGN="LEFT">Lab3_sim.vwf</TD>
+<TD ALIGN="LEFT">&nbsp;</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">Add pins automatically to simulation output waveforms</TD>
+<TD ALIGN="LEFT">On</TD>
+<TD ALIGN="LEFT">On</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">Check outputs</TD>
+<TD ALIGN="LEFT">Off</TD>
+<TD ALIGN="LEFT">Off</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">Report simulation coverage</TD>
+<TD ALIGN="LEFT">On</TD>
+<TD ALIGN="LEFT">On</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">Display complete 1/0 value coverage report</TD>
+<TD ALIGN="LEFT">On</TD>
+<TD ALIGN="LEFT">On</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">Display missing 1-value coverage report</TD>
+<TD ALIGN="LEFT">On</TD>
+<TD ALIGN="LEFT">On</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">Display missing 0-value coverage report</TD>
+<TD ALIGN="LEFT">On</TD>
+<TD ALIGN="LEFT">On</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">Detect setup and hold time violations</TD>
+<TD ALIGN="LEFT">On</TD>
+<TD ALIGN="LEFT">Off</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">Detect glitches</TD>
+<TD ALIGN="LEFT">Off</TD>
+<TD ALIGN="LEFT">Off</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">Disable timing delays in Timing Simulation</TD>
+<TD ALIGN="LEFT">Off</TD>
+<TD ALIGN="LEFT">Off</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">Generate Signal Activity File</TD>
+<TD ALIGN="LEFT">Off</TD>
+<TD ALIGN="LEFT">Off</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">Generate VCD File for PowerPlay Power Analyzer</TD>
+<TD ALIGN="LEFT">Off</TD>
+<TD ALIGN="LEFT">Off</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">Group bus channels in simulation results</TD>
+<TD ALIGN="LEFT">Off</TD>
+<TD ALIGN="LEFT">Off</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">Preserve fewer signal transitions to reduce memory requirements</TD>
+<TD ALIGN="LEFT">On</TD>
+<TD ALIGN="LEFT">On</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">Trigger vector comparison with the specified mode</TD>
+<TD ALIGN="LEFT">INPUT_EDGE</TD>
+<TD ALIGN="LEFT">INPUT_EDGE</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">Disable setup and hold time violations detection in input registers of bi-directional pins</TD>
+<TD ALIGN="LEFT">Off</TD>
+<TD ALIGN="LEFT">Off</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">Overwrite Waveform Inputs With Simulation Outputs</TD>
+<TD ALIGN="LEFT">On</TD>
+<TD ALIGN="LEFT">&nbsp;</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">Perform Glitch Filtering in Timing Simulation</TD>
+<TD ALIGN="LEFT">Auto</TD>
+<TD ALIGN="LEFT">Auto</TD>
+</TR>
+</TABLE>
+<P><A NAME="4"><HR></A></P>
+<TABLE WIDTH="100%" BORDER="0"><TR VALIGN="TOP">
+<TD><H2>Simulation Waveforms</H2></TD>
+<TD ALIGN="RIGHT"><A HREF="#top">Top</a></TD></TR></TABLE>
+Waveform report data cannot be output to HTML.<BR>
+Please use Quartus II to view the waveform report data.
+<P><A NAME="5"><HR></A></P>
+<TABLE WIDTH="100%" BORDER="0"><TR VALIGN="TOP">
+<TD><H2>Coverage Summary</H2></TD>
+<TD ALIGN="RIGHT"><A HREF="#top">Top</a></TD></TR></TABLE>
+<TABLE BORDER="1" cellspacing="1" cellpadding="2">
+<TR valign="middle" bgcolor="#C0C0C0">
+<TH>Type</TH>
+<TH>Value</TH>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">Total coverage as a percentage</TD>
+<TD ALIGN="LEFT">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;53.85 %</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">Total nodes checked</TD>
+<TD ALIGN="LEFT">136</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">Total output ports checked</TD>
+<TD ALIGN="LEFT">156</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">Total output ports with complete 1/0-value coverage</TD>
+<TD ALIGN="LEFT">84</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">Total output ports with no 1/0-value coverage</TD>
+<TD ALIGN="LEFT">55</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">Total output ports with no 1-value coverage</TD>
+<TD ALIGN="LEFT">57</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">Total output ports with no 0-value coverage</TD>
+<TD ALIGN="LEFT">70</TD>
+</TR>
+</TABLE>
+<P><A NAME="6"><HR></A></P>
+<TABLE WIDTH="100%" BORDER="0"><TR VALIGN="TOP">
+<TD><H2>Complete 1/0-Value Coverage</H2></TD>
+<TD ALIGN="RIGHT"><A HREF="#top">Top</a></TD></TR></TABLE>
+The following table displays output ports that toggle between 1 and 0 during simulation.<br>
+<TABLE BORDER="1" cellspacing="1" cellpadding="2">
+<TR valign="middle" bgcolor="#C0C0C0">
+<TH>Node Name</TH>
+<TH>Output Port Name</TH>
+<TH>Output Port Type</TH>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">|Lab3|vga_control:inst|count_1688_next[7]</TD>
+<TD ALIGN="LEFT">|Lab3|vga_control:inst|count_1688_next[7]</TD>
+<TD ALIGN="LEFT">regout</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">|Lab3|vga_control:inst|count_1688_next[2]</TD>
+<TD ALIGN="LEFT">|Lab3|vga_control:inst|count_1688_next[2]</TD>
+<TD ALIGN="LEFT">regout</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">|Lab3|vga_control:inst|count_1688_next[0]</TD>
+<TD ALIGN="LEFT">|Lab3|vga_control:inst|count_1688_next[0]</TD>
+<TD ALIGN="LEFT">regout</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">|Lab3|vga_control:inst|count_1688_next[8]</TD>
+<TD ALIGN="LEFT">|Lab3|vga_control:inst|count_1688_next[8]</TD>
+<TD ALIGN="LEFT">regout</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">|Lab3|vga_control:inst|count_1688_next[4]</TD>
+<TD ALIGN="LEFT">|Lab3|vga_control:inst|count_1688_next[4]</TD>
+<TD ALIGN="LEFT">regout</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">|Lab3|vga_control:inst|count_1688_next[6]</TD>
+<TD ALIGN="LEFT">|Lab3|vga_control:inst|count_1688_next[6]</TD>
+<TD ALIGN="LEFT">regout</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">|Lab3|vga_control:inst|count_1688_next[5]</TD>
+<TD ALIGN="LEFT">|Lab3|vga_control:inst|count_1688_next[5]</TD>
+<TD ALIGN="LEFT">regout</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">|Lab3|vga_control:inst|count_1688_next[3]</TD>
+<TD ALIGN="LEFT">|Lab3|vga_control:inst|count_1688_next[3]</TD>
+<TD ALIGN="LEFT">regout</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">|Lab3|vga_control:inst|count_1688_next[1]</TD>
+<TD ALIGN="LEFT">|Lab3|vga_control:inst|count_1688_next[1]</TD>
+<TD ALIGN="LEFT">regout</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">|Lab3|vga_control:inst|count_1688_next[10]</TD>
+<TD ALIGN="LEFT">|Lab3|vga_control:inst|count_1688_next[10]</TD>
+<TD ALIGN="LEFT">regout</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">|Lab3|vga_control:inst|count_1688_next[9]</TD>
+<TD ALIGN="LEFT">|Lab3|vga_control:inst|count_1688_next[9]</TD>
+<TD ALIGN="LEFT">regout</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">|Lab3|vga_control:inst|count_1066_next[2]</TD>
+<TD ALIGN="LEFT">|Lab3|vga_control:inst|count_1066_next[2]</TD>
+<TD ALIGN="LEFT">regout</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">|Lab3|vga_control:inst|count_1066_next[1]</TD>
+<TD ALIGN="LEFT">|Lab3|vga_control:inst|count_1066_next[1]</TD>
+<TD ALIGN="LEFT">regout</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">|Lab3|vga_control:inst|count_1066_next[3]</TD>
+<TD ALIGN="LEFT">|Lab3|vga_control:inst|count_1066_next[3]</TD>
+<TD ALIGN="LEFT">regout</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">|Lab3|vga_control:inst|count_1066_next[0]</TD>
+<TD ALIGN="LEFT">|Lab3|vga_control:inst|count_1066_next[0]</TD>
+<TD ALIGN="LEFT">regout</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">|Lab3|vga_control:inst|Add0~1</TD>
+<TD ALIGN="LEFT">|Lab3|vga_control:inst|Add0~1</TD>
+<TD ALIGN="LEFT">sumout</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">|Lab3|vga_control:inst|Add0~1</TD>
+<TD ALIGN="LEFT">|Lab3|vga_control:inst|Add0~2</TD>
+<TD ALIGN="LEFT">cout</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">|Lab3|vga_control:inst|Add0~5</TD>
+<TD ALIGN="LEFT">|Lab3|vga_control:inst|Add0~5</TD>
+<TD ALIGN="LEFT">sumout</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">|Lab3|vga_control:inst|Add0~5</TD>
+<TD ALIGN="LEFT">|Lab3|vga_control:inst|Add0~6</TD>
+<TD ALIGN="LEFT">cout</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">|Lab3|vga_control:inst|Add0~9</TD>
+<TD ALIGN="LEFT">|Lab3|vga_control:inst|Add0~9</TD>
+<TD ALIGN="LEFT">sumout</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">|Lab3|vga_control:inst|Add0~9</TD>
+<TD ALIGN="LEFT">|Lab3|vga_control:inst|Add0~10</TD>
+<TD ALIGN="LEFT">cout</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">|Lab3|vga_control:inst|Add0~13</TD>
+<TD ALIGN="LEFT">|Lab3|vga_control:inst|Add0~13</TD>
+<TD ALIGN="LEFT">sumout</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">|Lab3|vga_control:inst|Add0~13</TD>
+<TD ALIGN="LEFT">|Lab3|vga_control:inst|Add0~14</TD>
+<TD ALIGN="LEFT">cout</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">|Lab3|vga_control:inst|Add0~17</TD>
+<TD ALIGN="LEFT">|Lab3|vga_control:inst|Add0~17</TD>
+<TD ALIGN="LEFT">sumout</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">|Lab3|vga_control:inst|Add0~17</TD>
+<TD ALIGN="LEFT">|Lab3|vga_control:inst|Add0~18</TD>
+<TD ALIGN="LEFT">cout</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">|Lab3|vga_control:inst|Add0~21</TD>
+<TD ALIGN="LEFT">|Lab3|vga_control:inst|Add0~21</TD>
+<TD ALIGN="LEFT">sumout</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">|Lab3|vga_control:inst|Add0~21</TD>
+<TD ALIGN="LEFT">|Lab3|vga_control:inst|Add0~22</TD>
+<TD ALIGN="LEFT">cout</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">|Lab3|vga_control:inst|Add0~25</TD>
+<TD ALIGN="LEFT">|Lab3|vga_control:inst|Add0~25</TD>
+<TD ALIGN="LEFT">sumout</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">|Lab3|vga_control:inst|Add0~25</TD>
+<TD ALIGN="LEFT">|Lab3|vga_control:inst|Add0~26</TD>
+<TD ALIGN="LEFT">cout</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">|Lab3|vga_control:inst|Add0~29</TD>
+<TD ALIGN="LEFT">|Lab3|vga_control:inst|Add0~29</TD>
+<TD ALIGN="LEFT">sumout</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">|Lab3|vga_control:inst|Add0~29</TD>
+<TD ALIGN="LEFT">|Lab3|vga_control:inst|Add0~30</TD>
+<TD ALIGN="LEFT">cout</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">|Lab3|vga_control:inst|Add0~33</TD>
+<TD ALIGN="LEFT">|Lab3|vga_control:inst|Add0~33</TD>
+<TD ALIGN="LEFT">sumout</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">|Lab3|vga_control:inst|Add0~33</TD>
+<TD ALIGN="LEFT">|Lab3|vga_control:inst|Add0~34</TD>
+<TD ALIGN="LEFT">cout</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">|Lab3|vga_control:inst|Add0~37</TD>
+<TD ALIGN="LEFT">|Lab3|vga_control:inst|Add0~37</TD>
+<TD ALIGN="LEFT">sumout</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">|Lab3|vga_control:inst|Add0~37</TD>
+<TD ALIGN="LEFT">|Lab3|vga_control:inst|Add0~38</TD>
+<TD ALIGN="LEFT">cout</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">|Lab3|vga_control:inst|Add0~41</TD>
+<TD ALIGN="LEFT">|Lab3|vga_control:inst|Add0~41</TD>
+<TD ALIGN="LEFT">sumout</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">|Lab3|vga_control:inst|Add1~1</TD>
+<TD ALIGN="LEFT">|Lab3|vga_control:inst|Add1~1</TD>
+<TD ALIGN="LEFT">sumout</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">|Lab3|vga_control:inst|Add1~1</TD>
+<TD ALIGN="LEFT">|Lab3|vga_control:inst|Add1~2</TD>
+<TD ALIGN="LEFT">cout</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">|Lab3|vga_control:inst|Add1~5</TD>
+<TD ALIGN="LEFT">|Lab3|vga_control:inst|Add1~5</TD>
+<TD ALIGN="LEFT">sumout</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">|Lab3|vga_control:inst|Add1~5</TD>
+<TD ALIGN="LEFT">|Lab3|vga_control:inst|Add1~6</TD>
+<TD ALIGN="LEFT">cout</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">|Lab3|vga_control:inst|Add1~9</TD>
+<TD ALIGN="LEFT">|Lab3|vga_control:inst|Add1~9</TD>
+<TD ALIGN="LEFT">sumout</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">|Lab3|vga_control:inst|Add1~9</TD>
+<TD ALIGN="LEFT">|Lab3|vga_control:inst|Add1~10</TD>
+<TD ALIGN="LEFT">cout</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">|Lab3|vga_control:inst|Add1~13</TD>
+<TD ALIGN="LEFT">|Lab3|vga_control:inst|Add1~13</TD>
+<TD ALIGN="LEFT">sumout</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">|Lab3|vga_control:inst|Add1~13</TD>
+<TD ALIGN="LEFT">|Lab3|vga_control:inst|Add1~14</TD>
+<TD ALIGN="LEFT">cout</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">|Lab3|vga_control:inst|Add1~17</TD>
+<TD ALIGN="LEFT">|Lab3|vga_control:inst|Add1~17</TD>
+<TD ALIGN="LEFT">sumout</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">|Lab3|vga_control:inst|Add1~17</TD>
+<TD ALIGN="LEFT">|Lab3|vga_control:inst|Add1~18</TD>
+<TD ALIGN="LEFT">cout</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">|Lab3|vga_control:inst|hsync</TD>
+<TD ALIGN="LEFT">|Lab3|vga_control:inst|hsync</TD>
+<TD ALIGN="LEFT">regout</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">|Lab3|vga_control:inst|Equal0~0</TD>
+<TD ALIGN="LEFT">|Lab3|vga_control:inst|Equal0~0</TD>
+<TD ALIGN="LEFT">combout</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">|Lab3|vga_control:inst|Equal0~1</TD>
+<TD ALIGN="LEFT">|Lab3|vga_control:inst|Equal0~1</TD>
+<TD ALIGN="LEFT">combout</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">|Lab3|vga_control:inst|Equal1~1</TD>
+<TD ALIGN="LEFT">|Lab3|vga_control:inst|Equal1~1</TD>
+<TD ALIGN="LEFT">combout</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">|Lab3|vga_control:inst|hsync_reg2</TD>
+<TD ALIGN="LEFT">|Lab3|vga_control:inst|hsync_reg2</TD>
+<TD ALIGN="LEFT">regout</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">|Lab3|vga_control:inst|LessThan8~0</TD>
+<TD ALIGN="LEFT">|Lab3|vga_control:inst|LessThan8~0</TD>
+<TD ALIGN="LEFT">combout</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">|Lab3|vga_control:inst|LessThan8~1</TD>
+<TD ALIGN="LEFT">|Lab3|vga_control:inst|LessThan8~1</TD>
+<TD ALIGN="LEFT">combout</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">|Lab3|vga_control:inst|output_colour~36</TD>
+<TD ALIGN="LEFT">|Lab3|vga_control:inst|output_colour~36</TD>
+<TD ALIGN="LEFT">combout</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">|Lab3|vga_control:inst|LessThan1~0</TD>
+<TD ALIGN="LEFT">|Lab3|vga_control:inst|LessThan1~0</TD>
+<TD ALIGN="LEFT">combout</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">|Lab3|vga_control:inst|output_colour~37</TD>
+<TD ALIGN="LEFT">|Lab3|vga_control:inst|output_colour~37</TD>
+<TD ALIGN="LEFT">combout</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">|Lab3|vga_control:inst|LessThan5~0</TD>
+<TD ALIGN="LEFT">|Lab3|vga_control:inst|LessThan5~0</TD>
+<TD ALIGN="LEFT">combout</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">|Lab3|vga_control:inst|LessThan4~0</TD>
+<TD ALIGN="LEFT">|Lab3|vga_control:inst|LessThan4~0</TD>
+<TD ALIGN="LEFT">combout</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">|Lab3|vga_control:inst|output_colour~40</TD>
+<TD ALIGN="LEFT">|Lab3|vga_control:inst|output_colour~40</TD>
+<TD ALIGN="LEFT">combout</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">|Lab3|vga_control:inst|output_colour~41</TD>
+<TD ALIGN="LEFT">|Lab3|vga_control:inst|output_colour~41</TD>
+<TD ALIGN="LEFT">combout</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">|Lab3|vga_control:inst|output_colour~42</TD>
+<TD ALIGN="LEFT">|Lab3|vga_control:inst|output_colour~42</TD>
+<TD ALIGN="LEFT">combout</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">|Lab3|vga_control:inst|LessThan2~0</TD>
+<TD ALIGN="LEFT">|Lab3|vga_control:inst|LessThan2~0</TD>
+<TD ALIGN="LEFT">combout</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">|Lab3|vga_control:inst|output_colour~45</TD>
+<TD ALIGN="LEFT">|Lab3|vga_control:inst|output_colour~45</TD>
+<TD ALIGN="LEFT">combout</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">|Lab3|vga_control:inst|Equal0~2</TD>
+<TD ALIGN="LEFT">|Lab3|vga_control:inst|Equal0~2</TD>
+<TD ALIGN="LEFT">combout</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">|Lab3|hsync</TD>
+<TD ALIGN="LEFT">|Lab3|hsync</TD>
+<TD ALIGN="LEFT">padio</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">|Lab3|hfin</TD>
+<TD ALIGN="LEFT">|Lab3|hfin</TD>
+<TD ALIGN="LEFT">padio</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">|Lab3|counterh[10]</TD>
+<TD ALIGN="LEFT">|Lab3|counterh[10]</TD>
+<TD ALIGN="LEFT">padio</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">|Lab3|counterh[9]</TD>
+<TD ALIGN="LEFT">|Lab3|counterh[9]</TD>
+<TD ALIGN="LEFT">padio</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">|Lab3|counterh[8]</TD>
+<TD ALIGN="LEFT">|Lab3|counterh[8]</TD>
+<TD ALIGN="LEFT">padio</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">|Lab3|counterh[7]</TD>
+<TD ALIGN="LEFT">|Lab3|counterh[7]</TD>
+<TD ALIGN="LEFT">padio</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">|Lab3|counterh[6]</TD>
+<TD ALIGN="LEFT">|Lab3|counterh[6]</TD>
+<TD ALIGN="LEFT">padio</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">|Lab3|counterh[5]</TD>
+<TD ALIGN="LEFT">|Lab3|counterh[5]</TD>
+<TD ALIGN="LEFT">padio</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">|Lab3|counterh[4]</TD>
+<TD ALIGN="LEFT">|Lab3|counterh[4]</TD>
+<TD ALIGN="LEFT">padio</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">|Lab3|counterh[3]</TD>
+<TD ALIGN="LEFT">|Lab3|counterh[3]</TD>
+<TD ALIGN="LEFT">padio</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">|Lab3|counterh[2]</TD>
+<TD ALIGN="LEFT">|Lab3|counterh[2]</TD>
+<TD ALIGN="LEFT">padio</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">|Lab3|counterh[1]</TD>
+<TD ALIGN="LEFT">|Lab3|counterh[1]</TD>
+<TD ALIGN="LEFT">padio</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">|Lab3|counterh[0]</TD>
+<TD ALIGN="LEFT">|Lab3|counterh[0]</TD>
+<TD ALIGN="LEFT">padio</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">|Lab3|counterv[3]</TD>
+<TD ALIGN="LEFT">|Lab3|counterv[3]</TD>
+<TD ALIGN="LEFT">padio</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">|Lab3|counterv[2]</TD>
+<TD ALIGN="LEFT">|Lab3|counterv[2]</TD>
+<TD ALIGN="LEFT">padio</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">|Lab3|counterv[1]</TD>
+<TD ALIGN="LEFT">|Lab3|counterv[1]</TD>
+<TD ALIGN="LEFT">padio</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">|Lab3|counterv[0]</TD>
+<TD ALIGN="LEFT">|Lab3|counterv[0]</TD>
+<TD ALIGN="LEFT">padio</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">|Lab3|clk</TD>
+<TD ALIGN="LEFT">|Lab3|clk~corein</TD>
+<TD ALIGN="LEFT">combout</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">|Lab3|clk~clkctrl</TD>
+<TD ALIGN="LEFT">|Lab3|clk~clkctrl</TD>
+<TD ALIGN="LEFT">outclk</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">|Lab3|vga_control:inst|Equal0~1DUPLICATE</TD>
+<TD ALIGN="LEFT">|Lab3|vga_control:inst|Equal0~1DUPLICATE</TD>
+<TD ALIGN="LEFT">combout</TD>
+</TR>
+</TABLE>
+<P><A NAME="7"><HR></A></P>
+<TABLE WIDTH="100%" BORDER="0"><TR VALIGN="TOP">
+<TD><H2>Missing 1-Value Coverage</H2></TD>
+<TD ALIGN="RIGHT"><A HREF="#top">Top</a></TD></TR></TABLE>
+The following table displays output ports that do not toggle to 1 during simulation.<br>
+<TABLE BORDER="1" cellspacing="1" cellpadding="2">
+<TR valign="middle" bgcolor="#C0C0C0">
+<TH>Node Name</TH>
+<TH>Output Port Name</TH>
+<TH>Output Port Type</TH>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">|Lab3|vga_control:inst|count_1066_next[10]</TD>
+<TD ALIGN="LEFT">|Lab3|vga_control:inst|count_1066_next[10]</TD>
+<TD ALIGN="LEFT">regout</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">|Lab3|vga_control:inst|count_1066_next[9]</TD>
+<TD ALIGN="LEFT">|Lab3|vga_control:inst|count_1066_next[9]</TD>
+<TD ALIGN="LEFT">regout</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">|Lab3|vga_control:inst|count_1066_next[8]</TD>
+<TD ALIGN="LEFT">|Lab3|vga_control:inst|count_1066_next[8]</TD>
+<TD ALIGN="LEFT">regout</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">|Lab3|vga_control:inst|count_1066_next[7]</TD>
+<TD ALIGN="LEFT">|Lab3|vga_control:inst|count_1066_next[7]</TD>
+<TD ALIGN="LEFT">regout</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">|Lab3|vga_control:inst|count_1066_next[6]</TD>
+<TD ALIGN="LEFT">|Lab3|vga_control:inst|count_1066_next[6]</TD>
+<TD ALIGN="LEFT">regout</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">|Lab3|vga_control:inst|count_1066_next[5]</TD>
+<TD ALIGN="LEFT">|Lab3|vga_control:inst|count_1066_next[5]</TD>
+<TD ALIGN="LEFT">regout</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">|Lab3|vga_control:inst|Add1~21</TD>
+<TD ALIGN="LEFT">|Lab3|vga_control:inst|Add1~21</TD>
+<TD ALIGN="LEFT">sumout</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">|Lab3|vga_control:inst|Add1~21</TD>
+<TD ALIGN="LEFT">|Lab3|vga_control:inst|Add1~22</TD>
+<TD ALIGN="LEFT">cout</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">|Lab3|vga_control:inst|Add1~25</TD>
+<TD ALIGN="LEFT">|Lab3|vga_control:inst|Add1~25</TD>
+<TD ALIGN="LEFT">sumout</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">|Lab3|vga_control:inst|Add1~25</TD>
+<TD ALIGN="LEFT">|Lab3|vga_control:inst|Add1~26</TD>
+<TD ALIGN="LEFT">cout</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">|Lab3|vga_control:inst|Add1~29</TD>
+<TD ALIGN="LEFT">|Lab3|vga_control:inst|Add1~29</TD>
+<TD ALIGN="LEFT">sumout</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">|Lab3|vga_control:inst|Add1~29</TD>
+<TD ALIGN="LEFT">|Lab3|vga_control:inst|Add1~30</TD>
+<TD ALIGN="LEFT">cout</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">|Lab3|vga_control:inst|Add1~33</TD>
+<TD ALIGN="LEFT">|Lab3|vga_control:inst|Add1~33</TD>
+<TD ALIGN="LEFT">sumout</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">|Lab3|vga_control:inst|Add1~33</TD>
+<TD ALIGN="LEFT">|Lab3|vga_control:inst|Add1~34</TD>
+<TD ALIGN="LEFT">cout</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">|Lab3|vga_control:inst|Add1~37</TD>
+<TD ALIGN="LEFT">|Lab3|vga_control:inst|Add1~37</TD>
+<TD ALIGN="LEFT">sumout</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">|Lab3|vga_control:inst|Add1~37</TD>
+<TD ALIGN="LEFT">|Lab3|vga_control:inst|Add1~38</TD>
+<TD ALIGN="LEFT">cout</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">|Lab3|vga_control:inst|Add1~41</TD>
+<TD ALIGN="LEFT">|Lab3|vga_control:inst|Add1~41</TD>
+<TD ALIGN="LEFT">sumout</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">|Lab3|vga_control:inst|output_colour~46</TD>
+<TD ALIGN="LEFT">|Lab3|vga_control:inst|output_colour~46</TD>
+<TD ALIGN="LEFT">combout</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">|Lab3|vga_control:inst|output_colour~50</TD>
+<TD ALIGN="LEFT">|Lab3|vga_control:inst|output_colour~50</TD>
+<TD ALIGN="LEFT">combout</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">|Lab3|vga_control:inst|Equal1~0</TD>
+<TD ALIGN="LEFT">|Lab3|vga_control:inst|Equal1~0</TD>
+<TD ALIGN="LEFT">combout</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">|Lab3|vga_control:inst|Equal1~2</TD>
+<TD ALIGN="LEFT">|Lab3|vga_control:inst|Equal1~2</TD>
+<TD ALIGN="LEFT">combout</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">|Lab3|vga_control:inst|green[3]</TD>
+<TD ALIGN="LEFT">|Lab3|vga_control:inst|green[3]</TD>
+<TD ALIGN="LEFT">regout</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">|Lab3|vga_control:inst|green[2]</TD>
+<TD ALIGN="LEFT">|Lab3|vga_control:inst|green[2]</TD>
+<TD ALIGN="LEFT">regout</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">|Lab3|vga_control:inst|green[1]</TD>
+<TD ALIGN="LEFT">|Lab3|vga_control:inst|green[1]</TD>
+<TD ALIGN="LEFT">regout</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">|Lab3|vga_control:inst|green[0]</TD>
+<TD ALIGN="LEFT">|Lab3|vga_control:inst|green[0]</TD>
+<TD ALIGN="LEFT">regout</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">|Lab3|vga_control:inst|red[2]</TD>
+<TD ALIGN="LEFT">|Lab3|vga_control:inst|red[2]</TD>
+<TD ALIGN="LEFT">regout</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">|Lab3|vga_control:inst|red[1]</TD>
+<TD ALIGN="LEFT">|Lab3|vga_control:inst|red[1]</TD>
+<TD ALIGN="LEFT">regout</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">|Lab3|vga_control:inst|red[0]</TD>
+<TD ALIGN="LEFT">|Lab3|vga_control:inst|red[0]</TD>
+<TD ALIGN="LEFT">regout</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">|Lab3|vga_control:inst|output_colour[7]</TD>
+<TD ALIGN="LEFT">|Lab3|vga_control:inst|output_colour[7]</TD>
+<TD ALIGN="LEFT">regout</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">|Lab3|vga_control:inst|output_colour[10]</TD>
+<TD ALIGN="LEFT">|Lab3|vga_control:inst|output_colour[10]</TD>
+<TD ALIGN="LEFT">regout</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">|Lab3|vga_control:inst|LessThan9~0</TD>
+<TD ALIGN="LEFT">|Lab3|vga_control:inst|LessThan9~0</TD>
+<TD ALIGN="LEFT">combout</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">|Lab3|vga_control:inst|LessThan9~1</TD>
+<TD ALIGN="LEFT">|Lab3|vga_control:inst|LessThan9~1</TD>
+<TD ALIGN="LEFT">combout</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">|Lab3|vga_control:inst|output_colour~38</TD>
+<TD ALIGN="LEFT">|Lab3|vga_control:inst|output_colour~38</TD>
+<TD ALIGN="LEFT">combout</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">|Lab3|vga_control:inst|output_colour~39</TD>
+<TD ALIGN="LEFT">|Lab3|vga_control:inst|output_colour~39</TD>
+<TD ALIGN="LEFT">combout</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">|Lab3|vga_control:inst|output_colour~43</TD>
+<TD ALIGN="LEFT">|Lab3|vga_control:inst|output_colour~43</TD>
+<TD ALIGN="LEFT">combout</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">|Lab3|vga_control:inst|output_colour~44</TD>
+<TD ALIGN="LEFT">|Lab3|vga_control:inst|output_colour~44</TD>
+<TD ALIGN="LEFT">combout</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">|Lab3|vfin</TD>
+<TD ALIGN="LEFT">|Lab3|vfin</TD>
+<TD ALIGN="LEFT">padio</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">|Lab3|counterv[10]</TD>
+<TD ALIGN="LEFT">|Lab3|counterv[10]</TD>
+<TD ALIGN="LEFT">padio</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">|Lab3|counterv[9]</TD>
+<TD ALIGN="LEFT">|Lab3|counterv[9]</TD>
+<TD ALIGN="LEFT">padio</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">|Lab3|counterv[8]</TD>
+<TD ALIGN="LEFT">|Lab3|counterv[8]</TD>
+<TD ALIGN="LEFT">padio</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">|Lab3|counterv[7]</TD>
+<TD ALIGN="LEFT">|Lab3|counterv[7]</TD>
+<TD ALIGN="LEFT">padio</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">|Lab3|counterv[6]</TD>
+<TD ALIGN="LEFT">|Lab3|counterv[6]</TD>
+<TD ALIGN="LEFT">padio</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">|Lab3|counterv[5]</TD>
+<TD ALIGN="LEFT">|Lab3|counterv[5]</TD>
+<TD ALIGN="LEFT">padio</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">|Lab3|green[3]</TD>
+<TD ALIGN="LEFT">|Lab3|green[3]</TD>
+<TD ALIGN="LEFT">padio</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">|Lab3|green[2]</TD>
+<TD ALIGN="LEFT">|Lab3|green[2]</TD>
+<TD ALIGN="LEFT">padio</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">|Lab3|green[1]</TD>
+<TD ALIGN="LEFT">|Lab3|green[1]</TD>
+<TD ALIGN="LEFT">padio</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">|Lab3|green[0]</TD>
+<TD ALIGN="LEFT">|Lab3|green[0]</TD>
+<TD ALIGN="LEFT">padio</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">|Lab3|red[3]</TD>
+<TD ALIGN="LEFT">|Lab3|red[3]</TD>
+<TD ALIGN="LEFT">padio</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">|Lab3|red[2]</TD>
+<TD ALIGN="LEFT">|Lab3|red[2]</TD>
+<TD ALIGN="LEFT">padio</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">|Lab3|red[1]</TD>
+<TD ALIGN="LEFT">|Lab3|red[1]</TD>
+<TD ALIGN="LEFT">padio</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">|Lab3|red[0]</TD>
+<TD ALIGN="LEFT">|Lab3|red[0]</TD>
+<TD ALIGN="LEFT">padio</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">|Lab3|reset</TD>
+<TD ALIGN="LEFT">|Lab3|reset~corein</TD>
+<TD ALIGN="LEFT">combout</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">|Lab3|mode</TD>
+<TD ALIGN="LEFT">|Lab3|mode~corein</TD>
+<TD ALIGN="LEFT">combout</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">|Lab3|reset~clkctrl</TD>
+<TD ALIGN="LEFT">|Lab3|reset~clkctrl</TD>
+<TD ALIGN="LEFT">outclk</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">|Lab3|vga_control:inst|green[2]~feeder</TD>
+<TD ALIGN="LEFT">|Lab3|vga_control:inst|green[2]~feeder</TD>
+<TD ALIGN="LEFT">combout</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">|Lab3|vga_control:inst|green[1]~feeder</TD>
+<TD ALIGN="LEFT">|Lab3|vga_control:inst|green[1]~feeder</TD>
+<TD ALIGN="LEFT">combout</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">|Lab3|vga_control:inst|red[0]~feeder</TD>
+<TD ALIGN="LEFT">|Lab3|vga_control:inst|red[0]~feeder</TD>
+<TD ALIGN="LEFT">combout</TD>
+</TR>
+</TABLE>
+<P><A NAME="8"><HR></A></P>
+<TABLE WIDTH="100%" BORDER="0"><TR VALIGN="TOP">
+<TD><H2>Missing 0-Value Coverage</H2></TD>
+<TD ALIGN="RIGHT"><A HREF="#top">Top</a></TD></TR></TABLE>
+The following table displays output ports that do not toggle to 0 during simulation.<br>
+<TABLE BORDER="1" cellspacing="1" cellpadding="2">
+<TR valign="middle" bgcolor="#C0C0C0">
+<TH>Node Name</TH>
+<TH>Output Port Name</TH>
+<TH>Output Port Type</TH>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">|Lab3|vga_control:inst|count_1066_next[10]</TD>
+<TD ALIGN="LEFT">|Lab3|vga_control:inst|count_1066_next[10]</TD>
+<TD ALIGN="LEFT">regout</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">|Lab3|vga_control:inst|count_1066_next[9]</TD>
+<TD ALIGN="LEFT">|Lab3|vga_control:inst|count_1066_next[9]</TD>
+<TD ALIGN="LEFT">regout</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">|Lab3|vga_control:inst|count_1066_next[8]</TD>
+<TD ALIGN="LEFT">|Lab3|vga_control:inst|count_1066_next[8]</TD>
+<TD ALIGN="LEFT">regout</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">|Lab3|vga_control:inst|count_1066_next[7]</TD>
+<TD ALIGN="LEFT">|Lab3|vga_control:inst|count_1066_next[7]</TD>
+<TD ALIGN="LEFT">regout</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">|Lab3|vga_control:inst|count_1066_next[6]</TD>
+<TD ALIGN="LEFT">|Lab3|vga_control:inst|count_1066_next[6]</TD>
+<TD ALIGN="LEFT">regout</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">|Lab3|vga_control:inst|count_1066_next[4]</TD>
+<TD ALIGN="LEFT">|Lab3|vga_control:inst|count_1066_next[4]</TD>
+<TD ALIGN="LEFT">regout</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">|Lab3|vga_control:inst|count_1066_next[5]</TD>
+<TD ALIGN="LEFT">|Lab3|vga_control:inst|count_1066_next[5]</TD>
+<TD ALIGN="LEFT">regout</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">|Lab3|vga_control:inst|Add1~21</TD>
+<TD ALIGN="LEFT">|Lab3|vga_control:inst|Add1~21</TD>
+<TD ALIGN="LEFT">sumout</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">|Lab3|vga_control:inst|Add1~21</TD>
+<TD ALIGN="LEFT">|Lab3|vga_control:inst|Add1~22</TD>
+<TD ALIGN="LEFT">cout</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">|Lab3|vga_control:inst|Add1~25</TD>
+<TD ALIGN="LEFT">|Lab3|vga_control:inst|Add1~25</TD>
+<TD ALIGN="LEFT">sumout</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">|Lab3|vga_control:inst|Add1~25</TD>
+<TD ALIGN="LEFT">|Lab3|vga_control:inst|Add1~26</TD>
+<TD ALIGN="LEFT">cout</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">|Lab3|vga_control:inst|Add1~29</TD>
+<TD ALIGN="LEFT">|Lab3|vga_control:inst|Add1~29</TD>
+<TD ALIGN="LEFT">sumout</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">|Lab3|vga_control:inst|Add1~29</TD>
+<TD ALIGN="LEFT">|Lab3|vga_control:inst|Add1~30</TD>
+<TD ALIGN="LEFT">cout</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">|Lab3|vga_control:inst|Add1~33</TD>
+<TD ALIGN="LEFT">|Lab3|vga_control:inst|Add1~33</TD>
+<TD ALIGN="LEFT">sumout</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">|Lab3|vga_control:inst|Add1~33</TD>
+<TD ALIGN="LEFT">|Lab3|vga_control:inst|Add1~34</TD>
+<TD ALIGN="LEFT">cout</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">|Lab3|vga_control:inst|Add1~37</TD>
+<TD ALIGN="LEFT">|Lab3|vga_control:inst|Add1~37</TD>
+<TD ALIGN="LEFT">sumout</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">|Lab3|vga_control:inst|Add1~37</TD>
+<TD ALIGN="LEFT">|Lab3|vga_control:inst|Add1~38</TD>
+<TD ALIGN="LEFT">cout</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">|Lab3|vga_control:inst|Add1~41</TD>
+<TD ALIGN="LEFT">|Lab3|vga_control:inst|Add1~41</TD>
+<TD ALIGN="LEFT">sumout</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">|Lab3|vga_control:inst|output_colour~46</TD>
+<TD ALIGN="LEFT">|Lab3|vga_control:inst|output_colour~46</TD>
+<TD ALIGN="LEFT">combout</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">|Lab3|vga_control:inst|output_colour~50</TD>
+<TD ALIGN="LEFT">|Lab3|vga_control:inst|output_colour~50</TD>
+<TD ALIGN="LEFT">combout</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">|Lab3|vga_control:inst|vsync</TD>
+<TD ALIGN="LEFT">|Lab3|vga_control:inst|vsync</TD>
+<TD ALIGN="LEFT">regout</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">|Lab3|vga_control:inst|Equal1~0</TD>
+<TD ALIGN="LEFT">|Lab3|vga_control:inst|Equal1~0</TD>
+<TD ALIGN="LEFT">combout</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">|Lab3|vga_control:inst|Equal1~2</TD>
+<TD ALIGN="LEFT">|Lab3|vga_control:inst|Equal1~2</TD>
+<TD ALIGN="LEFT">combout</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">|Lab3|vga_control:inst|blue[3]</TD>
+<TD ALIGN="LEFT">|Lab3|vga_control:inst|blue[3]</TD>
+<TD ALIGN="LEFT">regout</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">|Lab3|vga_control:inst|blue[2]</TD>
+<TD ALIGN="LEFT">|Lab3|vga_control:inst|blue[2]</TD>
+<TD ALIGN="LEFT">regout</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">|Lab3|vga_control:inst|blue[1]</TD>
+<TD ALIGN="LEFT">|Lab3|vga_control:inst|blue[1]</TD>
+<TD ALIGN="LEFT">regout</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">|Lab3|vga_control:inst|blue[0]</TD>
+<TD ALIGN="LEFT">|Lab3|vga_control:inst|blue[0]</TD>
+<TD ALIGN="LEFT">regout</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">|Lab3|vga_control:inst|green[3]</TD>
+<TD ALIGN="LEFT">|Lab3|vga_control:inst|green[3]</TD>
+<TD ALIGN="LEFT">regout</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">|Lab3|vga_control:inst|green[2]</TD>
+<TD ALIGN="LEFT">|Lab3|vga_control:inst|green[2]</TD>
+<TD ALIGN="LEFT">regout</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">|Lab3|vga_control:inst|green[1]</TD>
+<TD ALIGN="LEFT">|Lab3|vga_control:inst|green[1]</TD>
+<TD ALIGN="LEFT">regout</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">|Lab3|vga_control:inst|green[0]</TD>
+<TD ALIGN="LEFT">|Lab3|vga_control:inst|green[0]</TD>
+<TD ALIGN="LEFT">regout</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">|Lab3|vga_control:inst|red[2]</TD>
+<TD ALIGN="LEFT">|Lab3|vga_control:inst|red[2]</TD>
+<TD ALIGN="LEFT">regout</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">|Lab3|vga_control:inst|red[1]</TD>
+<TD ALIGN="LEFT">|Lab3|vga_control:inst|red[1]</TD>
+<TD ALIGN="LEFT">regout</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">|Lab3|vga_control:inst|red[0]</TD>
+<TD ALIGN="LEFT">|Lab3|vga_control:inst|red[0]</TD>
+<TD ALIGN="LEFT">regout</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">|Lab3|vga_control:inst|vsync_reg2</TD>
+<TD ALIGN="LEFT">|Lab3|vga_control:inst|vsync_reg2</TD>
+<TD ALIGN="LEFT">regout</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">|Lab3|vga_control:inst|output_colour[3]</TD>
+<TD ALIGN="LEFT">|Lab3|vga_control:inst|output_colour[3]</TD>
+<TD ALIGN="LEFT">regout</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">|Lab3|vga_control:inst|output_colour[7]</TD>
+<TD ALIGN="LEFT">|Lab3|vga_control:inst|output_colour[7]</TD>
+<TD ALIGN="LEFT">regout</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">|Lab3|vga_control:inst|output_colour[10]</TD>
+<TD ALIGN="LEFT">|Lab3|vga_control:inst|output_colour[10]</TD>
+<TD ALIGN="LEFT">regout</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">|Lab3|vga_control:inst|LessThan9~0</TD>
+<TD ALIGN="LEFT">|Lab3|vga_control:inst|LessThan9~0</TD>
+<TD ALIGN="LEFT">combout</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">|Lab3|vga_control:inst|LessThan9~1</TD>
+<TD ALIGN="LEFT">|Lab3|vga_control:inst|LessThan9~1</TD>
+<TD ALIGN="LEFT">combout</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">|Lab3|vga_control:inst|output_colour~38</TD>
+<TD ALIGN="LEFT">|Lab3|vga_control:inst|output_colour~38</TD>
+<TD ALIGN="LEFT">combout</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">|Lab3|vga_control:inst|output_colour~39</TD>
+<TD ALIGN="LEFT">|Lab3|vga_control:inst|output_colour~39</TD>
+<TD ALIGN="LEFT">combout</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">|Lab3|vga_control:inst|output_colour~43</TD>
+<TD ALIGN="LEFT">|Lab3|vga_control:inst|output_colour~43</TD>
+<TD ALIGN="LEFT">combout</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">|Lab3|vga_control:inst|output_colour~44</TD>
+<TD ALIGN="LEFT">|Lab3|vga_control:inst|output_colour~44</TD>
+<TD ALIGN="LEFT">combout</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">|Lab3|vsync</TD>
+<TD ALIGN="LEFT">|Lab3|vsync</TD>
+<TD ALIGN="LEFT">padio</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">|Lab3|vfin</TD>
+<TD ALIGN="LEFT">|Lab3|vfin</TD>
+<TD ALIGN="LEFT">padio</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">|Lab3|blue[3]</TD>
+<TD ALIGN="LEFT">|Lab3|blue[3]</TD>
+<TD ALIGN="LEFT">padio</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">|Lab3|blue[2]</TD>
+<TD ALIGN="LEFT">|Lab3|blue[2]</TD>
+<TD ALIGN="LEFT">padio</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">|Lab3|blue[1]</TD>
+<TD ALIGN="LEFT">|Lab3|blue[1]</TD>
+<TD ALIGN="LEFT">padio</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">|Lab3|blue[0]</TD>
+<TD ALIGN="LEFT">|Lab3|blue[0]</TD>
+<TD ALIGN="LEFT">padio</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">|Lab3|counterv[10]</TD>
+<TD ALIGN="LEFT">|Lab3|counterv[10]</TD>
+<TD ALIGN="LEFT">padio</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">|Lab3|counterv[9]</TD>
+<TD ALIGN="LEFT">|Lab3|counterv[9]</TD>
+<TD ALIGN="LEFT">padio</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">|Lab3|counterv[8]</TD>
+<TD ALIGN="LEFT">|Lab3|counterv[8]</TD>
+<TD ALIGN="LEFT">padio</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">|Lab3|counterv[7]</TD>
+<TD ALIGN="LEFT">|Lab3|counterv[7]</TD>
+<TD ALIGN="LEFT">padio</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">|Lab3|counterv[6]</TD>
+<TD ALIGN="LEFT">|Lab3|counterv[6]</TD>
+<TD ALIGN="LEFT">padio</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">|Lab3|counterv[5]</TD>
+<TD ALIGN="LEFT">|Lab3|counterv[5]</TD>
+<TD ALIGN="LEFT">padio</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">|Lab3|counterv[4]</TD>
+<TD ALIGN="LEFT">|Lab3|counterv[4]</TD>
+<TD ALIGN="LEFT">padio</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">|Lab3|green[3]</TD>
+<TD ALIGN="LEFT">|Lab3|green[3]</TD>
+<TD ALIGN="LEFT">padio</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">|Lab3|green[2]</TD>
+<TD ALIGN="LEFT">|Lab3|green[2]</TD>
+<TD ALIGN="LEFT">padio</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">|Lab3|green[1]</TD>
+<TD ALIGN="LEFT">|Lab3|green[1]</TD>
+<TD ALIGN="LEFT">padio</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">|Lab3|green[0]</TD>
+<TD ALIGN="LEFT">|Lab3|green[0]</TD>
+<TD ALIGN="LEFT">padio</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">|Lab3|red[3]</TD>
+<TD ALIGN="LEFT">|Lab3|red[3]</TD>
+<TD ALIGN="LEFT">padio</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">|Lab3|red[2]</TD>
+<TD ALIGN="LEFT">|Lab3|red[2]</TD>
+<TD ALIGN="LEFT">padio</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">|Lab3|red[1]</TD>
+<TD ALIGN="LEFT">|Lab3|red[1]</TD>
+<TD ALIGN="LEFT">padio</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">|Lab3|red[0]</TD>
+<TD ALIGN="LEFT">|Lab3|red[0]</TD>
+<TD ALIGN="LEFT">padio</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">|Lab3|mode</TD>
+<TD ALIGN="LEFT">|Lab3|mode~corein</TD>
+<TD ALIGN="LEFT">combout</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">|Lab3|vga_control:inst|blue[0]~feeder</TD>
+<TD ALIGN="LEFT">|Lab3|vga_control:inst|blue[0]~feeder</TD>
+<TD ALIGN="LEFT">combout</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">|Lab3|vga_control:inst|green[2]~feeder</TD>
+<TD ALIGN="LEFT">|Lab3|vga_control:inst|green[2]~feeder</TD>
+<TD ALIGN="LEFT">combout</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">|Lab3|vga_control:inst|green[1]~feeder</TD>
+<TD ALIGN="LEFT">|Lab3|vga_control:inst|green[1]~feeder</TD>
+<TD ALIGN="LEFT">combout</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">|Lab3|vga_control:inst|red[0]~feeder</TD>
+<TD ALIGN="LEFT">|Lab3|vga_control:inst|red[0]~feeder</TD>
+<TD ALIGN="LEFT">combout</TD>
+</TR>
+</TABLE>
+<P><A NAME="9"><HR></A></P>
+<TABLE WIDTH="100%" BORDER="0"><TR VALIGN="TOP">
+<TD><H2>Simulator INI Usage</H2></TD>
+<TD ALIGN="RIGHT"><A HREF="#top">Top</a></TD></TR></TABLE>
+<TABLE BORDER="1" cellspacing="1" cellpadding="2">
+<TR valign="middle" bgcolor="#C0C0C0">
+<TH>Option</TH>
+<TH>Usage</TH>
+</TR>
+</TABLE>
+<P><A NAME="10"><HR></A></P>
+<TABLE WIDTH="100%" BORDER="0"><TR VALIGN="TOP">
+<TD><H2>Simulator Messages</H2></TD>
+<TD ALIGN="RIGHT"><A HREF="#top">Top</a></TD></TR></TABLE>
+<PRE>
+Info: *******************************************************************
+Info: Running Quartus II Simulator
+    Info: Version 9.0 Build 184 04/29/2009 Service Pack 1 SJ Web Edition
+    Info: Processing started: Tue Oct 10 15:40:59 2017
+Info: Command: quartus_sim --read_settings_files=on --write_settings_files=off Lab3 -c Lab3
+Info: Using vector source file "C:/Users/David/Desktop/Uni/MEE/ADS/VGAInterface/Lab3_sim.vwf"
+Info: Overwriting simulation input file with simulation results
+    Info: A backup of Lab3_sim.vwf called Lab3.sim_ori.vwf has been created in the db folder
+Info: Option to preserve fewer signal transitions to reduce memory requirements is enabled
+    Info: Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
+Info: Simulation partitioned into 1 sub-simulations
+Info: Simulation coverage is      53.85 %
+Info: Number of transitions in simulation is 906472
+Info: Vector file Lab3_sim.vwf is saved in VWF text format. You can compress it into CVWF format in order to reduce file size. For more details please refer to the Quartus II Help.
+Info: Quartus II Simulator was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 179 megabytes
+    Info: Processing ended: Tue Oct 10 15:41:04 2017
+    Info: Elapsed time: 00:00:05
+    Info: Total CPU time (on all processors): 00:00:05
+</PRE>
+<HR>
+
+<A HREF="#top">Top</A>
+
+</BODY>
+
+</HTML>
+

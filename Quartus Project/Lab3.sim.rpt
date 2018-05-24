@@ -1,0 +1,376 @@
+Simulator report for Lab3
+Tue Oct 10 15:41:04 2017
+Quartus II Version 9.0 Build 184 04/29/2009 Service Pack 1 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Simulator Summary
+  3. Simulator Settings
+  4. Simulation Waveforms
+  5. Coverage Summary
+  6. Complete 1/0-Value Coverage
+  7. Missing 1-Value Coverage
+  8. Missing 0-Value Coverage
+  9. Simulator INI Usage
+ 10. Simulator Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2009 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------+
+; Simulator Summary                          ;
++-----------------------------+--------------+
+; Type                        ; Value        ;
++-----------------------------+--------------+
+; Simulation Start Time       ; 0 ps         ;
+; Simulation End Time         ; 500.0 us     ;
+; Simulation Netlist Size     ; 136 nodes    ;
+; Simulation Coverage         ;      53.85 % ;
+; Total Number of Transitions ; 906472       ;
+; Simulation Breakpoints      ; 0            ;
+; Family                      ; Stratix II   ;
+; Device                      ; EP2S15F484C3 ;
++-----------------------------+--------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------+
+; Simulator Settings                                                                                                        ;
++--------------------------------------------------------------------------------------------+--------------+---------------+
+; Option                                                                                     ; Setting      ; Default Value ;
++--------------------------------------------------------------------------------------------+--------------+---------------+
+; Simulation mode                                                                            ; Timing       ; Timing        ;
+; Start time                                                                                 ; 0 ns         ; 0 ns          ;
+; Simulation results format                                                                  ; CVWF         ;               ;
+; Vector input source                                                                        ; Lab3_sim.vwf ;               ;
+; Add pins automatically to simulation output waveforms                                      ; On           ; On            ;
+; Check outputs                                                                              ; Off          ; Off           ;
+; Report simulation coverage                                                                 ; On           ; On            ;
+; Display complete 1/0 value coverage report                                                 ; On           ; On            ;
+; Display missing 1-value coverage report                                                    ; On           ; On            ;
+; Display missing 0-value coverage report                                                    ; On           ; On            ;
+; Detect setup and hold time violations                                                      ; On           ; Off           ;
+; Detect glitches                                                                            ; Off          ; Off           ;
+; Disable timing delays in Timing Simulation                                                 ; Off          ; Off           ;
+; Generate Signal Activity File                                                              ; Off          ; Off           ;
+; Generate VCD File for PowerPlay Power Analyzer                                             ; Off          ; Off           ;
+; Group bus channels in simulation results                                                   ; Off          ; Off           ;
+; Preserve fewer signal transitions to reduce memory requirements                            ; On           ; On            ;
+; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE   ; INPUT_EDGE    ;
+; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off          ; Off           ;
+; Overwrite Waveform Inputs With Simulation Outputs                                          ; On           ;               ;
+; Perform Glitch Filtering in Timing Simulation                                              ; Auto         ; Auto          ;
++--------------------------------------------------------------------------------------------+--------------+---------------+
+
+
++----------------------+
+; Simulation Waveforms ;
++----------------------+
+Waveform report data cannot be output to ASCII.
+Please use Quartus II to view the waveform report data.
+
+
++--------------------------------------------------------------------+
+; Coverage Summary                                                   ;
++-----------------------------------------------------+--------------+
+; Type                                                ; Value        ;
++-----------------------------------------------------+--------------+
+; Total coverage as a percentage                      ;      53.85 % ;
+; Total nodes checked                                 ; 136          ;
+; Total output ports checked                          ; 156          ;
+; Total output ports with complete 1/0-value coverage ; 84           ;
+; Total output ports with no 1/0-value coverage       ; 55           ;
+; Total output ports with no 1-value coverage         ; 57           ;
+; Total output ports with no 0-value coverage         ; 70           ;
++-----------------------------------------------------+--------------+
+
+
+The following table displays output ports that toggle between 1 and 0 during simulation.
++------------------------------------------------------------------------------------------------------------+
+; Complete 1/0-Value Coverage                                                                                ;
++--------------------------------------------+--------------------------------------------+------------------+
+; Node Name                                  ; Output Port Name                           ; Output Port Type ;
++--------------------------------------------+--------------------------------------------+------------------+
+; |Lab3|vga_control:inst|count_1688_next[7]  ; |Lab3|vga_control:inst|count_1688_next[7]  ; regout           ;
+; |Lab3|vga_control:inst|count_1688_next[2]  ; |Lab3|vga_control:inst|count_1688_next[2]  ; regout           ;
+; |Lab3|vga_control:inst|count_1688_next[0]  ; |Lab3|vga_control:inst|count_1688_next[0]  ; regout           ;
+; |Lab3|vga_control:inst|count_1688_next[8]  ; |Lab3|vga_control:inst|count_1688_next[8]  ; regout           ;
+; |Lab3|vga_control:inst|count_1688_next[4]  ; |Lab3|vga_control:inst|count_1688_next[4]  ; regout           ;
+; |Lab3|vga_control:inst|count_1688_next[6]  ; |Lab3|vga_control:inst|count_1688_next[6]  ; regout           ;
+; |Lab3|vga_control:inst|count_1688_next[5]  ; |Lab3|vga_control:inst|count_1688_next[5]  ; regout           ;
+; |Lab3|vga_control:inst|count_1688_next[3]  ; |Lab3|vga_control:inst|count_1688_next[3]  ; regout           ;
+; |Lab3|vga_control:inst|count_1688_next[1]  ; |Lab3|vga_control:inst|count_1688_next[1]  ; regout           ;
+; |Lab3|vga_control:inst|count_1688_next[10] ; |Lab3|vga_control:inst|count_1688_next[10] ; regout           ;
+; |Lab3|vga_control:inst|count_1688_next[9]  ; |Lab3|vga_control:inst|count_1688_next[9]  ; regout           ;
+; |Lab3|vga_control:inst|count_1066_next[2]  ; |Lab3|vga_control:inst|count_1066_next[2]  ; regout           ;
+; |Lab3|vga_control:inst|count_1066_next[1]  ; |Lab3|vga_control:inst|count_1066_next[1]  ; regout           ;
+; |Lab3|vga_control:inst|count_1066_next[3]  ; |Lab3|vga_control:inst|count_1066_next[3]  ; regout           ;
+; |Lab3|vga_control:inst|count_1066_next[0]  ; |Lab3|vga_control:inst|count_1066_next[0]  ; regout           ;
+; |Lab3|vga_control:inst|Add0~1              ; |Lab3|vga_control:inst|Add0~1              ; sumout           ;
+; |Lab3|vga_control:inst|Add0~1              ; |Lab3|vga_control:inst|Add0~2              ; cout             ;
+; |Lab3|vga_control:inst|Add0~5              ; |Lab3|vga_control:inst|Add0~5              ; sumout           ;
+; |Lab3|vga_control:inst|Add0~5              ; |Lab3|vga_control:inst|Add0~6              ; cout             ;
+; |Lab3|vga_control:inst|Add0~9              ; |Lab3|vga_control:inst|Add0~9              ; sumout           ;
+; |Lab3|vga_control:inst|Add0~9              ; |Lab3|vga_control:inst|Add0~10             ; cout             ;
+; |Lab3|vga_control:inst|Add0~13             ; |Lab3|vga_control:inst|Add0~13             ; sumout           ;
+; |Lab3|vga_control:inst|Add0~13             ; |Lab3|vga_control:inst|Add0~14             ; cout             ;
+; |Lab3|vga_control:inst|Add0~17             ; |Lab3|vga_control:inst|Add0~17             ; sumout           ;
+; |Lab3|vga_control:inst|Add0~17             ; |Lab3|vga_control:inst|Add0~18             ; cout             ;
+; |Lab3|vga_control:inst|Add0~21             ; |Lab3|vga_control:inst|Add0~21             ; sumout           ;
+; |Lab3|vga_control:inst|Add0~21             ; |Lab3|vga_control:inst|Add0~22             ; cout             ;
+; |Lab3|vga_control:inst|Add0~25             ; |Lab3|vga_control:inst|Add0~25             ; sumout           ;
+; |Lab3|vga_control:inst|Add0~25             ; |Lab3|vga_control:inst|Add0~26             ; cout             ;
+; |Lab3|vga_control:inst|Add0~29             ; |Lab3|vga_control:inst|Add0~29             ; sumout           ;
+; |Lab3|vga_control:inst|Add0~29             ; |Lab3|vga_control:inst|Add0~30             ; cout             ;
+; |Lab3|vga_control:inst|Add0~33             ; |Lab3|vga_control:inst|Add0~33             ; sumout           ;
+; |Lab3|vga_control:inst|Add0~33             ; |Lab3|vga_control:inst|Add0~34             ; cout             ;
+; |Lab3|vga_control:inst|Add0~37             ; |Lab3|vga_control:inst|Add0~37             ; sumout           ;
+; |Lab3|vga_control:inst|Add0~37             ; |Lab3|vga_control:inst|Add0~38             ; cout             ;
+; |Lab3|vga_control:inst|Add0~41             ; |Lab3|vga_control:inst|Add0~41             ; sumout           ;
+; |Lab3|vga_control:inst|Add1~1              ; |Lab3|vga_control:inst|Add1~1              ; sumout           ;
+; |Lab3|vga_control:inst|Add1~1              ; |Lab3|vga_control:inst|Add1~2              ; cout             ;
+; |Lab3|vga_control:inst|Add1~5              ; |Lab3|vga_control:inst|Add1~5              ; sumout           ;
+; |Lab3|vga_control:inst|Add1~5              ; |Lab3|vga_control:inst|Add1~6              ; cout             ;
+; |Lab3|vga_control:inst|Add1~9              ; |Lab3|vga_control:inst|Add1~9              ; sumout           ;
+; |Lab3|vga_control:inst|Add1~9              ; |Lab3|vga_control:inst|Add1~10             ; cout             ;
+; |Lab3|vga_control:inst|Add1~13             ; |Lab3|vga_control:inst|Add1~13             ; sumout           ;
+; |Lab3|vga_control:inst|Add1~13             ; |Lab3|vga_control:inst|Add1~14             ; cout             ;
+; |Lab3|vga_control:inst|Add1~17             ; |Lab3|vga_control:inst|Add1~17             ; sumout           ;
+; |Lab3|vga_control:inst|Add1~17             ; |Lab3|vga_control:inst|Add1~18             ; cout             ;
+; |Lab3|vga_control:inst|hsync               ; |Lab3|vga_control:inst|hsync               ; regout           ;
+; |Lab3|vga_control:inst|Equal0~0            ; |Lab3|vga_control:inst|Equal0~0            ; combout          ;
+; |Lab3|vga_control:inst|Equal0~1            ; |Lab3|vga_control:inst|Equal0~1            ; combout          ;
+; |Lab3|vga_control:inst|Equal1~1            ; |Lab3|vga_control:inst|Equal1~1            ; combout          ;
+; |Lab3|vga_control:inst|hsync_reg2          ; |Lab3|vga_control:inst|hsync_reg2          ; regout           ;
+; |Lab3|vga_control:inst|LessThan8~0         ; |Lab3|vga_control:inst|LessThan8~0         ; combout          ;
+; |Lab3|vga_control:inst|LessThan8~1         ; |Lab3|vga_control:inst|LessThan8~1         ; combout          ;
+; |Lab3|vga_control:inst|output_colour~36    ; |Lab3|vga_control:inst|output_colour~36    ; combout          ;
+; |Lab3|vga_control:inst|LessThan1~0         ; |Lab3|vga_control:inst|LessThan1~0         ; combout          ;
+; |Lab3|vga_control:inst|output_colour~37    ; |Lab3|vga_control:inst|output_colour~37    ; combout          ;
+; |Lab3|vga_control:inst|LessThan5~0         ; |Lab3|vga_control:inst|LessThan5~0         ; combout          ;
+; |Lab3|vga_control:inst|LessThan4~0         ; |Lab3|vga_control:inst|LessThan4~0         ; combout          ;
+; |Lab3|vga_control:inst|output_colour~40    ; |Lab3|vga_control:inst|output_colour~40    ; combout          ;
+; |Lab3|vga_control:inst|output_colour~41    ; |Lab3|vga_control:inst|output_colour~41    ; combout          ;
+; |Lab3|vga_control:inst|output_colour~42    ; |Lab3|vga_control:inst|output_colour~42    ; combout          ;
+; |Lab3|vga_control:inst|LessThan2~0         ; |Lab3|vga_control:inst|LessThan2~0         ; combout          ;
+; |Lab3|vga_control:inst|output_colour~45    ; |Lab3|vga_control:inst|output_colour~45    ; combout          ;
+; |Lab3|vga_control:inst|Equal0~2            ; |Lab3|vga_control:inst|Equal0~2            ; combout          ;
+; |Lab3|hsync                                ; |Lab3|hsync                                ; padio            ;
+; |Lab3|hfin                                 ; |Lab3|hfin                                 ; padio            ;
+; |Lab3|counterh[10]                         ; |Lab3|counterh[10]                         ; padio            ;
+; |Lab3|counterh[9]                          ; |Lab3|counterh[9]                          ; padio            ;
+; |Lab3|counterh[8]                          ; |Lab3|counterh[8]                          ; padio            ;
+; |Lab3|counterh[7]                          ; |Lab3|counterh[7]                          ; padio            ;
+; |Lab3|counterh[6]                          ; |Lab3|counterh[6]                          ; padio            ;
+; |Lab3|counterh[5]                          ; |Lab3|counterh[5]                          ; padio            ;
+; |Lab3|counterh[4]                          ; |Lab3|counterh[4]                          ; padio            ;
+; |Lab3|counterh[3]                          ; |Lab3|counterh[3]                          ; padio            ;
+; |Lab3|counterh[2]                          ; |Lab3|counterh[2]                          ; padio            ;
+; |Lab3|counterh[1]                          ; |Lab3|counterh[1]                          ; padio            ;
+; |Lab3|counterh[0]                          ; |Lab3|counterh[0]                          ; padio            ;
+; |Lab3|counterv[3]                          ; |Lab3|counterv[3]                          ; padio            ;
+; |Lab3|counterv[2]                          ; |Lab3|counterv[2]                          ; padio            ;
+; |Lab3|counterv[1]                          ; |Lab3|counterv[1]                          ; padio            ;
+; |Lab3|counterv[0]                          ; |Lab3|counterv[0]                          ; padio            ;
+; |Lab3|clk                                  ; |Lab3|clk~corein                           ; combout          ;
+; |Lab3|clk~clkctrl                          ; |Lab3|clk~clkctrl                          ; outclk           ;
+; |Lab3|vga_control:inst|Equal0~1DUPLICATE   ; |Lab3|vga_control:inst|Equal0~1DUPLICATE   ; combout          ;
++--------------------------------------------+--------------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 1 during simulation.
++------------------------------------------------------------------------------------------------------------+
+; Missing 1-Value Coverage                                                                                   ;
++--------------------------------------------+--------------------------------------------+------------------+
+; Node Name                                  ; Output Port Name                           ; Output Port Type ;
++--------------------------------------------+--------------------------------------------+------------------+
+; |Lab3|vga_control:inst|count_1066_next[10] ; |Lab3|vga_control:inst|count_1066_next[10] ; regout           ;
+; |Lab3|vga_control:inst|count_1066_next[9]  ; |Lab3|vga_control:inst|count_1066_next[9]  ; regout           ;
+; |Lab3|vga_control:inst|count_1066_next[8]  ; |Lab3|vga_control:inst|count_1066_next[8]  ; regout           ;
+; |Lab3|vga_control:inst|count_1066_next[7]  ; |Lab3|vga_control:inst|count_1066_next[7]  ; regout           ;
+; |Lab3|vga_control:inst|count_1066_next[6]  ; |Lab3|vga_control:inst|count_1066_next[6]  ; regout           ;
+; |Lab3|vga_control:inst|count_1066_next[5]  ; |Lab3|vga_control:inst|count_1066_next[5]  ; regout           ;
+; |Lab3|vga_control:inst|Add1~21             ; |Lab3|vga_control:inst|Add1~21             ; sumout           ;
+; |Lab3|vga_control:inst|Add1~21             ; |Lab3|vga_control:inst|Add1~22             ; cout             ;
+; |Lab3|vga_control:inst|Add1~25             ; |Lab3|vga_control:inst|Add1~25             ; sumout           ;
+; |Lab3|vga_control:inst|Add1~25             ; |Lab3|vga_control:inst|Add1~26             ; cout             ;
+; |Lab3|vga_control:inst|Add1~29             ; |Lab3|vga_control:inst|Add1~29             ; sumout           ;
+; |Lab3|vga_control:inst|Add1~29             ; |Lab3|vga_control:inst|Add1~30             ; cout             ;
+; |Lab3|vga_control:inst|Add1~33             ; |Lab3|vga_control:inst|Add1~33             ; sumout           ;
+; |Lab3|vga_control:inst|Add1~33             ; |Lab3|vga_control:inst|Add1~34             ; cout             ;
+; |Lab3|vga_control:inst|Add1~37             ; |Lab3|vga_control:inst|Add1~37             ; sumout           ;
+; |Lab3|vga_control:inst|Add1~37             ; |Lab3|vga_control:inst|Add1~38             ; cout             ;
+; |Lab3|vga_control:inst|Add1~41             ; |Lab3|vga_control:inst|Add1~41             ; sumout           ;
+; |Lab3|vga_control:inst|output_colour~46    ; |Lab3|vga_control:inst|output_colour~46    ; combout          ;
+; |Lab3|vga_control:inst|output_colour~50    ; |Lab3|vga_control:inst|output_colour~50    ; combout          ;
+; |Lab3|vga_control:inst|Equal1~0            ; |Lab3|vga_control:inst|Equal1~0            ; combout          ;
+; |Lab3|vga_control:inst|Equal1~2            ; |Lab3|vga_control:inst|Equal1~2            ; combout          ;
+; |Lab3|vga_control:inst|green[3]            ; |Lab3|vga_control:inst|green[3]            ; regout           ;
+; |Lab3|vga_control:inst|green[2]            ; |Lab3|vga_control:inst|green[2]            ; regout           ;
+; |Lab3|vga_control:inst|green[1]            ; |Lab3|vga_control:inst|green[1]            ; regout           ;
+; |Lab3|vga_control:inst|green[0]            ; |Lab3|vga_control:inst|green[0]            ; regout           ;
+; |Lab3|vga_control:inst|red[2]              ; |Lab3|vga_control:inst|red[2]              ; regout           ;
+; |Lab3|vga_control:inst|red[1]              ; |Lab3|vga_control:inst|red[1]              ; regout           ;
+; |Lab3|vga_control:inst|red[0]              ; |Lab3|vga_control:inst|red[0]              ; regout           ;
+; |Lab3|vga_control:inst|output_colour[7]    ; |Lab3|vga_control:inst|output_colour[7]    ; regout           ;
+; |Lab3|vga_control:inst|output_colour[10]   ; |Lab3|vga_control:inst|output_colour[10]   ; regout           ;
+; |Lab3|vga_control:inst|LessThan9~0         ; |Lab3|vga_control:inst|LessThan9~0         ; combout          ;
+; |Lab3|vga_control:inst|LessThan9~1         ; |Lab3|vga_control:inst|LessThan9~1         ; combout          ;
+; |Lab3|vga_control:inst|output_colour~38    ; |Lab3|vga_control:inst|output_colour~38    ; combout          ;
+; |Lab3|vga_control:inst|output_colour~39    ; |Lab3|vga_control:inst|output_colour~39    ; combout          ;
+; |Lab3|vga_control:inst|output_colour~43    ; |Lab3|vga_control:inst|output_colour~43    ; combout          ;
+; |Lab3|vga_control:inst|output_colour~44    ; |Lab3|vga_control:inst|output_colour~44    ; combout          ;
+; |Lab3|vfin                                 ; |Lab3|vfin                                 ; padio            ;
+; |Lab3|counterv[10]                         ; |Lab3|counterv[10]                         ; padio            ;
+; |Lab3|counterv[9]                          ; |Lab3|counterv[9]                          ; padio            ;
+; |Lab3|counterv[8]                          ; |Lab3|counterv[8]                          ; padio            ;
+; |Lab3|counterv[7]                          ; |Lab3|counterv[7]                          ; padio            ;
+; |Lab3|counterv[6]                          ; |Lab3|counterv[6]                          ; padio            ;
+; |Lab3|counterv[5]                          ; |Lab3|counterv[5]                          ; padio            ;
+; |Lab3|green[3]                             ; |Lab3|green[3]                             ; padio            ;
+; |Lab3|green[2]                             ; |Lab3|green[2]                             ; padio            ;
+; |Lab3|green[1]                             ; |Lab3|green[1]                             ; padio            ;
+; |Lab3|green[0]                             ; |Lab3|green[0]                             ; padio            ;
+; |Lab3|red[3]                               ; |Lab3|red[3]                               ; padio            ;
+; |Lab3|red[2]                               ; |Lab3|red[2]                               ; padio            ;
+; |Lab3|red[1]                               ; |Lab3|red[1]                               ; padio            ;
+; |Lab3|red[0]                               ; |Lab3|red[0]                               ; padio            ;
+; |Lab3|reset                                ; |Lab3|reset~corein                         ; combout          ;
+; |Lab3|mode                                 ; |Lab3|mode~corein                          ; combout          ;
+; |Lab3|reset~clkctrl                        ; |Lab3|reset~clkctrl                        ; outclk           ;
+; |Lab3|vga_control:inst|green[2]~feeder     ; |Lab3|vga_control:inst|green[2]~feeder     ; combout          ;
+; |Lab3|vga_control:inst|green[1]~feeder     ; |Lab3|vga_control:inst|green[1]~feeder     ; combout          ;
+; |Lab3|vga_control:inst|red[0]~feeder       ; |Lab3|vga_control:inst|red[0]~feeder       ; combout          ;
++--------------------------------------------+--------------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 0 during simulation.
++------------------------------------------------------------------------------------------------------------+
+; Missing 0-Value Coverage                                                                                   ;
++--------------------------------------------+--------------------------------------------+------------------+
+; Node Name                                  ; Output Port Name                           ; Output Port Type ;
++--------------------------------------------+--------------------------------------------+------------------+
+; |Lab3|vga_control:inst|count_1066_next[10] ; |Lab3|vga_control:inst|count_1066_next[10] ; regout           ;
+; |Lab3|vga_control:inst|count_1066_next[9]  ; |Lab3|vga_control:inst|count_1066_next[9]  ; regout           ;
+; |Lab3|vga_control:inst|count_1066_next[8]  ; |Lab3|vga_control:inst|count_1066_next[8]  ; regout           ;
+; |Lab3|vga_control:inst|count_1066_next[7]  ; |Lab3|vga_control:inst|count_1066_next[7]  ; regout           ;
+; |Lab3|vga_control:inst|count_1066_next[6]  ; |Lab3|vga_control:inst|count_1066_next[6]  ; regout           ;
+; |Lab3|vga_control:inst|count_1066_next[4]  ; |Lab3|vga_control:inst|count_1066_next[4]  ; regout           ;
+; |Lab3|vga_control:inst|count_1066_next[5]  ; |Lab3|vga_control:inst|count_1066_next[5]  ; regout           ;
+; |Lab3|vga_control:inst|Add1~21             ; |Lab3|vga_control:inst|Add1~21             ; sumout           ;
+; |Lab3|vga_control:inst|Add1~21             ; |Lab3|vga_control:inst|Add1~22             ; cout             ;
+; |Lab3|vga_control:inst|Add1~25             ; |Lab3|vga_control:inst|Add1~25             ; sumout           ;
+; |Lab3|vga_control:inst|Add1~25             ; |Lab3|vga_control:inst|Add1~26             ; cout             ;
+; |Lab3|vga_control:inst|Add1~29             ; |Lab3|vga_control:inst|Add1~29             ; sumout           ;
+; |Lab3|vga_control:inst|Add1~29             ; |Lab3|vga_control:inst|Add1~30             ; cout             ;
+; |Lab3|vga_control:inst|Add1~33             ; |Lab3|vga_control:inst|Add1~33             ; sumout           ;
+; |Lab3|vga_control:inst|Add1~33             ; |Lab3|vga_control:inst|Add1~34             ; cout             ;
+; |Lab3|vga_control:inst|Add1~37             ; |Lab3|vga_control:inst|Add1~37             ; sumout           ;
+; |Lab3|vga_control:inst|Add1~37             ; |Lab3|vga_control:inst|Add1~38             ; cout             ;
+; |Lab3|vga_control:inst|Add1~41             ; |Lab3|vga_control:inst|Add1~41             ; sumout           ;
+; |Lab3|vga_control:inst|output_colour~46    ; |Lab3|vga_control:inst|output_colour~46    ; combout          ;
+; |Lab3|vga_control:inst|output_colour~50    ; |Lab3|vga_control:inst|output_colour~50    ; combout          ;
+; |Lab3|vga_control:inst|vsync               ; |Lab3|vga_control:inst|vsync               ; regout           ;
+; |Lab3|vga_control:inst|Equal1~0            ; |Lab3|vga_control:inst|Equal1~0            ; combout          ;
+; |Lab3|vga_control:inst|Equal1~2            ; |Lab3|vga_control:inst|Equal1~2            ; combout          ;
+; |Lab3|vga_control:inst|blue[3]             ; |Lab3|vga_control:inst|blue[3]             ; regout           ;
+; |Lab3|vga_control:inst|blue[2]             ; |Lab3|vga_control:inst|blue[2]             ; regout           ;
+; |Lab3|vga_control:inst|blue[1]             ; |Lab3|vga_control:inst|blue[1]             ; regout           ;
+; |Lab3|vga_control:inst|blue[0]             ; |Lab3|vga_control:inst|blue[0]             ; regout           ;
+; |Lab3|vga_control:inst|green[3]            ; |Lab3|vga_control:inst|green[3]            ; regout           ;
+; |Lab3|vga_control:inst|green[2]            ; |Lab3|vga_control:inst|green[2]            ; regout           ;
+; |Lab3|vga_control:inst|green[1]            ; |Lab3|vga_control:inst|green[1]            ; regout           ;
+; |Lab3|vga_control:inst|green[0]            ; |Lab3|vga_control:inst|green[0]            ; regout           ;
+; |Lab3|vga_control:inst|red[2]              ; |Lab3|vga_control:inst|red[2]              ; regout           ;
+; |Lab3|vga_control:inst|red[1]              ; |Lab3|vga_control:inst|red[1]              ; regout           ;
+; |Lab3|vga_control:inst|red[0]              ; |Lab3|vga_control:inst|red[0]              ; regout           ;
+; |Lab3|vga_control:inst|vsync_reg2          ; |Lab3|vga_control:inst|vsync_reg2          ; regout           ;
+; |Lab3|vga_control:inst|output_colour[3]    ; |Lab3|vga_control:inst|output_colour[3]    ; regout           ;
+; |Lab3|vga_control:inst|output_colour[7]    ; |Lab3|vga_control:inst|output_colour[7]    ; regout           ;
+; |Lab3|vga_control:inst|output_colour[10]   ; |Lab3|vga_control:inst|output_colour[10]   ; regout           ;
+; |Lab3|vga_control:inst|LessThan9~0         ; |Lab3|vga_control:inst|LessThan9~0         ; combout          ;
+; |Lab3|vga_control:inst|LessThan9~1         ; |Lab3|vga_control:inst|LessThan9~1         ; combout          ;
+; |Lab3|vga_control:inst|output_colour~38    ; |Lab3|vga_control:inst|output_colour~38    ; combout          ;
+; |Lab3|vga_control:inst|output_colour~39    ; |Lab3|vga_control:inst|output_colour~39    ; combout          ;
+; |Lab3|vga_control:inst|output_colour~43    ; |Lab3|vga_control:inst|output_colour~43    ; combout          ;
+; |Lab3|vga_control:inst|output_colour~44    ; |Lab3|vga_control:inst|output_colour~44    ; combout          ;
+; |Lab3|vsync                                ; |Lab3|vsync                                ; padio            ;
+; |Lab3|vfin                                 ; |Lab3|vfin                                 ; padio            ;
+; |Lab3|blue[3]                              ; |Lab3|blue[3]                              ; padio            ;
+; |Lab3|blue[2]                              ; |Lab3|blue[2]                              ; padio            ;
+; |Lab3|blue[1]                              ; |Lab3|blue[1]                              ; padio            ;
+; |Lab3|blue[0]                              ; |Lab3|blue[0]                              ; padio            ;
+; |Lab3|counterv[10]                         ; |Lab3|counterv[10]                         ; padio            ;
+; |Lab3|counterv[9]                          ; |Lab3|counterv[9]                          ; padio            ;
+; |Lab3|counterv[8]                          ; |Lab3|counterv[8]                          ; padio            ;
+; |Lab3|counterv[7]                          ; |Lab3|counterv[7]                          ; padio            ;
+; |Lab3|counterv[6]                          ; |Lab3|counterv[6]                          ; padio            ;
+; |Lab3|counterv[5]                          ; |Lab3|counterv[5]                          ; padio            ;
+; |Lab3|counterv[4]                          ; |Lab3|counterv[4]                          ; padio            ;
+; |Lab3|green[3]                             ; |Lab3|green[3]                             ; padio            ;
+; |Lab3|green[2]                             ; |Lab3|green[2]                             ; padio            ;
+; |Lab3|green[1]                             ; |Lab3|green[1]                             ; padio            ;
+; |Lab3|green[0]                             ; |Lab3|green[0]                             ; padio            ;
+; |Lab3|red[3]                               ; |Lab3|red[3]                               ; padio            ;
+; |Lab3|red[2]                               ; |Lab3|red[2]                               ; padio            ;
+; |Lab3|red[1]                               ; |Lab3|red[1]                               ; padio            ;
+; |Lab3|red[0]                               ; |Lab3|red[0]                               ; padio            ;
+; |Lab3|mode                                 ; |Lab3|mode~corein                          ; combout          ;
+; |Lab3|vga_control:inst|blue[0]~feeder      ; |Lab3|vga_control:inst|blue[0]~feeder      ; combout          ;
+; |Lab3|vga_control:inst|green[2]~feeder     ; |Lab3|vga_control:inst|green[2]~feeder     ; combout          ;
+; |Lab3|vga_control:inst|green[1]~feeder     ; |Lab3|vga_control:inst|green[1]~feeder     ; combout          ;
+; |Lab3|vga_control:inst|red[0]~feeder       ; |Lab3|vga_control:inst|red[0]~feeder       ; combout          ;
++--------------------------------------------+--------------------------------------------+------------------+
+
+
++---------------------+
+; Simulator INI Usage ;
++--------+------------+
+; Option ; Usage      ;
++--------+------------+
+
+
++--------------------+
+; Simulator Messages ;
++--------------------+
+Info: *******************************************************************
+Info: Running Quartus II Simulator
+    Info: Version 9.0 Build 184 04/29/2009 Service Pack 1 SJ Web Edition
+    Info: Processing started: Tue Oct 10 15:40:59 2017
+Info: Command: quartus_sim --read_settings_files=on --write_settings_files=off Lab3 -c Lab3
+Info: Using vector source file "C:/Users/David/Desktop/Uni/MEE/ADS/VGAInterface/Lab3_sim.vwf"
+Info: Overwriting simulation input file with simulation results
+    Info: A backup of Lab3_sim.vwf called Lab3.sim_ori.vwf has been created in the db folder
+Info: Option to preserve fewer signal transitions to reduce memory requirements is enabled
+    Info: Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
+Info: Simulation partitioned into 1 sub-simulations
+Info: Simulation coverage is      53.85 %
+Info: Number of transitions in simulation is 906472
+Info: Vector file Lab3_sim.vwf is saved in VWF text format. You can compress it into CVWF format in order to reduce file size. For more details please refer to the Quartus II Help.
+Info: Quartus II Simulator was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 179 megabytes
+    Info: Processing ended: Tue Oct 10 15:41:04 2017
+    Info: Elapsed time: 00:00:05
+    Info: Total CPU time (on all processors): 00:00:05
+
+

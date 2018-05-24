@@ -1,0 +1,3460 @@
+<HTML>
+
+<HEAD>
+<TITLE>Classic Timing Analyzer report for Lab3</TITLE>
+</HEAD>
+
+<BODY>
+
+<A NAME="top"></A>
+
+<CENTER>
+<H1>Classic Timing Analyzer report for Lab3</H1>
+<H3>Tue Oct 10 15:38:51 2017<BR>
+Quartus II Version 9.0 Build 184 04/29/2009 Service Pack 1 SJ Web Edition</H3>
+</CENTER>
+
+<P><HR></P>
+<TABLE WIDTH="100%" BORDER="0"><TR VALIGN="TOP">
+<TD><H2>Table of Contents</H2></TD>
+<TD ALIGN="RIGHT"><A HREF="#top">Top</a></TD></TR></TABLE>
+<OL>
+<LI><A HREF="#1">Legal Notice</A></LI>
+<LI><A HREF="#2">Timing Analyzer Summary</A></LI>
+<LI><A HREF="#3">Timing Analyzer Settings</A></LI>
+<LI><A HREF="#4">Clock Settings Summary</A></LI>
+<LI><A HREF="#5">Parallel Compilation</A></LI>
+<LI><A HREF="#6">Clock Setup: 'clk'</A></LI>
+<LI><A HREF="#7">tsu</A></LI>
+<LI><A HREF="#8">tco</A></LI>
+<LI><A HREF="#9">th</A></LI>
+<LI><A HREF="#10">Timing Analyzer Messages</A></LI>
+</OL>
+
+<P><A NAME="1"><HR></A></P>
+<TABLE WIDTH="100%" BORDER="0"><TR VALIGN="TOP">
+<TD><H2>Legal Notice</H2></TD>
+<TD ALIGN="RIGHT"><A HREF="#top">Top</a></TD></TR></TABLE>
+<PRE>Copyright (C) 1991-2009 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+</PRE>
+
+<P><A NAME="2"><HR></A></P>
+<TABLE WIDTH="100%" BORDER="0"><TR VALIGN="TOP">
+<TD><H2>Timing Analyzer Summary</H2></TD>
+<TD ALIGN="RIGHT"><A HREF="#top">Top</a></TD></TR></TABLE>
+<TABLE BORDER="1" cellspacing="1" cellpadding="2">
+<TR valign="middle" bgcolor="#C0C0C0">
+<TH>Type</TH>
+<TH>Slack</TH>
+<TH>Required Time</TH>
+<TH>Actual Time</TH>
+<TH>From</TH>
+<TH>To</TH>
+<TH>From Clock</TH>
+<TH>To Clock</TH>
+<TH>Failed Paths</TH>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">Worst-case tsu</TD>
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">3.775 ns</TD>
+<TD ALIGN="LEFT">mode</TD>
+<TD ALIGN="LEFT">vga_control:inst|output_colour[3]</TD>
+<TD ALIGN="LEFT">--</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">0</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">Worst-case tco</TD>
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">7.943 ns</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1066_next[6]</TD>
+<TD ALIGN="LEFT">vfin</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">--</TD>
+<TD ALIGN="LEFT">0</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">Worst-case th</TD>
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">-2.960 ns</TD>
+<TD ALIGN="LEFT">mode</TD>
+<TD ALIGN="LEFT">vga_control:inst|output_colour[3]</TD>
+<TD ALIGN="LEFT">--</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">0</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">Clock Setup: 'clk'</TD>
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">401.77 MHz ( period = 2.489 ns )</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1688_next[10]</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1066_next[10]</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">0</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">Total number of failed paths</TD>
+<TD ALIGN="LEFT">&nbsp;</TD>
+<TD ALIGN="LEFT">&nbsp;</TD>
+<TD ALIGN="LEFT">&nbsp;</TD>
+<TD ALIGN="LEFT">&nbsp;</TD>
+<TD ALIGN="LEFT">&nbsp;</TD>
+<TD ALIGN="LEFT">&nbsp;</TD>
+<TD ALIGN="LEFT">&nbsp;</TD>
+<TD ALIGN="LEFT">0</TD>
+</TR>
+</TABLE>
+<P><A NAME="3"><HR></A></P>
+<TABLE WIDTH="100%" BORDER="0"><TR VALIGN="TOP">
+<TD><H2>Timing Analyzer Settings</H2></TD>
+<TD ALIGN="RIGHT"><A HREF="#top">Top</a></TD></TR></TABLE>
+<TABLE BORDER="1" cellspacing="1" cellpadding="2">
+<TR valign="middle" bgcolor="#C0C0C0">
+<TH>Option</TH>
+<TH>Setting</TH>
+<TH>From</TH>
+<TH>To</TH>
+<TH>Entity Name</TH>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">Device Name</TD>
+<TD ALIGN="LEFT">EP2S15F484C3</TD>
+<TD ALIGN="LEFT">&nbsp;</TD>
+<TD ALIGN="LEFT">&nbsp;</TD>
+<TD ALIGN="LEFT">&nbsp;</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">Timing Models</TD>
+<TD ALIGN="LEFT">Final</TD>
+<TD ALIGN="LEFT">&nbsp;</TD>
+<TD ALIGN="LEFT">&nbsp;</TD>
+<TD ALIGN="LEFT">&nbsp;</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">Default hold multicycle</TD>
+<TD ALIGN="LEFT">Same as Multicycle</TD>
+<TD ALIGN="LEFT">&nbsp;</TD>
+<TD ALIGN="LEFT">&nbsp;</TD>
+<TD ALIGN="LEFT">&nbsp;</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">Cut paths between unrelated clock domains</TD>
+<TD ALIGN="LEFT">On</TD>
+<TD ALIGN="LEFT">&nbsp;</TD>
+<TD ALIGN="LEFT">&nbsp;</TD>
+<TD ALIGN="LEFT">&nbsp;</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">Cut off read during write signal paths</TD>
+<TD ALIGN="LEFT">On</TD>
+<TD ALIGN="LEFT">&nbsp;</TD>
+<TD ALIGN="LEFT">&nbsp;</TD>
+<TD ALIGN="LEFT">&nbsp;</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">Cut off feedback from I/O pins</TD>
+<TD ALIGN="LEFT">On</TD>
+<TD ALIGN="LEFT">&nbsp;</TD>
+<TD ALIGN="LEFT">&nbsp;</TD>
+<TD ALIGN="LEFT">&nbsp;</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">Report Combined Fast/Slow Timing</TD>
+<TD ALIGN="LEFT">Off</TD>
+<TD ALIGN="LEFT">&nbsp;</TD>
+<TD ALIGN="LEFT">&nbsp;</TD>
+<TD ALIGN="LEFT">&nbsp;</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">Ignore Clock Settings</TD>
+<TD ALIGN="LEFT">Off</TD>
+<TD ALIGN="LEFT">&nbsp;</TD>
+<TD ALIGN="LEFT">&nbsp;</TD>
+<TD ALIGN="LEFT">&nbsp;</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">Analyze latches as synchronous elements</TD>
+<TD ALIGN="LEFT">On</TD>
+<TD ALIGN="LEFT">&nbsp;</TD>
+<TD ALIGN="LEFT">&nbsp;</TD>
+<TD ALIGN="LEFT">&nbsp;</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">Enable Recovery/Removal analysis</TD>
+<TD ALIGN="LEFT">Off</TD>
+<TD ALIGN="LEFT">&nbsp;</TD>
+<TD ALIGN="LEFT">&nbsp;</TD>
+<TD ALIGN="LEFT">&nbsp;</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">Enable Clock Latency</TD>
+<TD ALIGN="LEFT">Off</TD>
+<TD ALIGN="LEFT">&nbsp;</TD>
+<TD ALIGN="LEFT">&nbsp;</TD>
+<TD ALIGN="LEFT">&nbsp;</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">Use TimeQuest Timing Analyzer</TD>
+<TD ALIGN="LEFT">Off</TD>
+<TD ALIGN="LEFT">&nbsp;</TD>
+<TD ALIGN="LEFT">&nbsp;</TD>
+<TD ALIGN="LEFT">&nbsp;</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">Number of source nodes to report per destination node</TD>
+<TD ALIGN="LEFT">10</TD>
+<TD ALIGN="LEFT">&nbsp;</TD>
+<TD ALIGN="LEFT">&nbsp;</TD>
+<TD ALIGN="LEFT">&nbsp;</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">Number of destination nodes to report</TD>
+<TD ALIGN="LEFT">10</TD>
+<TD ALIGN="LEFT">&nbsp;</TD>
+<TD ALIGN="LEFT">&nbsp;</TD>
+<TD ALIGN="LEFT">&nbsp;</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">Number of paths to report</TD>
+<TD ALIGN="LEFT">200</TD>
+<TD ALIGN="LEFT">&nbsp;</TD>
+<TD ALIGN="LEFT">&nbsp;</TD>
+<TD ALIGN="LEFT">&nbsp;</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">Report Minimum Timing Checks</TD>
+<TD ALIGN="LEFT">Off</TD>
+<TD ALIGN="LEFT">&nbsp;</TD>
+<TD ALIGN="LEFT">&nbsp;</TD>
+<TD ALIGN="LEFT">&nbsp;</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">Use Fast Timing Models</TD>
+<TD ALIGN="LEFT">Off</TD>
+<TD ALIGN="LEFT">&nbsp;</TD>
+<TD ALIGN="LEFT">&nbsp;</TD>
+<TD ALIGN="LEFT">&nbsp;</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">Report IO Paths Separately</TD>
+<TD ALIGN="LEFT">Off</TD>
+<TD ALIGN="LEFT">&nbsp;</TD>
+<TD ALIGN="LEFT">&nbsp;</TD>
+<TD ALIGN="LEFT">&nbsp;</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">Perform Multicorner Analysis</TD>
+<TD ALIGN="LEFT">On</TD>
+<TD ALIGN="LEFT">&nbsp;</TD>
+<TD ALIGN="LEFT">&nbsp;</TD>
+<TD ALIGN="LEFT">&nbsp;</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">Reports the worst-case path for each clock domain and analysis</TD>
+<TD ALIGN="LEFT">Off</TD>
+<TD ALIGN="LEFT">&nbsp;</TD>
+<TD ALIGN="LEFT">&nbsp;</TD>
+<TD ALIGN="LEFT">&nbsp;</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">Removes common clock path pessimism (CCPP) during slack computation</TD>
+<TD ALIGN="LEFT">Off</TD>
+<TD ALIGN="LEFT">&nbsp;</TD>
+<TD ALIGN="LEFT">&nbsp;</TD>
+<TD ALIGN="LEFT">&nbsp;</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">Output I/O Timing Endpoint</TD>
+<TD ALIGN="LEFT">Near End</TD>
+<TD ALIGN="LEFT">&nbsp;</TD>
+<TD ALIGN="LEFT">&nbsp;</TD>
+<TD ALIGN="LEFT">&nbsp;</TD>
+</TR>
+</TABLE>
+<P><A NAME="4"><HR></A></P>
+<TABLE WIDTH="100%" BORDER="0"><TR VALIGN="TOP">
+<TD><H2>Clock Settings Summary</H2></TD>
+<TD ALIGN="RIGHT"><A HREF="#top">Top</a></TD></TR></TABLE>
+<TABLE BORDER="1" cellspacing="1" cellpadding="2">
+<TR valign="middle" bgcolor="#C0C0C0">
+<TH>Clock Node Name</TH>
+<TH>Clock Setting Name</TH>
+<TH>Type</TH>
+<TH>Fmax Requirement</TH>
+<TH>Early Latency</TH>
+<TH>Late Latency</TH>
+<TH>Based on</TH>
+<TH>Multiply Base Fmax by</TH>
+<TH>Divide Base Fmax by</TH>
+<TH>Offset</TH>
+<TH>Phase offset</TH>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">&nbsp;</TD>
+<TD ALIGN="LEFT">User Pin</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">0.000 ns</TD>
+<TD ALIGN="LEFT">0.000 ns</TD>
+<TD ALIGN="LEFT">--</TD>
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">&nbsp;</TD>
+</TR>
+</TABLE>
+<P><A NAME="5"><HR></A></P>
+<TABLE WIDTH="100%" BORDER="0"><TR VALIGN="TOP">
+<TD><H2>Parallel Compilation</H2></TD>
+<TD ALIGN="RIGHT"><A HREF="#top">Top</a></TD></TR></TABLE>
+Parallel compilation was disabled, but you have multiple processors available. Enable parallel compilation to reduce compilation time.<br>
+<TABLE BORDER="1" cellspacing="1" cellpadding="2">
+<TR valign="middle" bgcolor="#C0C0C0">
+<TH>Processors</TH>
+<TH>Number</TH>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">Number detected on machine</TD>
+<TD ALIGN="LEFT">2</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">Maximum allowed</TD>
+<TD ALIGN="LEFT">1</TD>
+</TR>
+</TABLE>
+<P><A NAME="6"><HR></A></P>
+<TABLE WIDTH="100%" BORDER="0"><TR VALIGN="TOP">
+<TD><H2>Clock Setup: 'clk'</H2></TD>
+<TD ALIGN="RIGHT"><A HREF="#top">Top</a></TD></TR></TABLE>
+<TABLE BORDER="1" cellspacing="1" cellpadding="2">
+<TR valign="middle" bgcolor="#C0C0C0">
+<TH>Slack</TH>
+<TH>Actual fmax (period)</TH>
+<TH>From</TH>
+<TH>To</TH>
+<TH>From Clock</TH>
+<TH>To Clock</TH>
+<TH>Required Setup Relationship</TH>
+<TH>Required Longest P2P Time</TH>
+<TH>Actual Longest P2P Time</TH>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">401.77 MHz ( period = 2.489 ns )</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1688_next[10]</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1066_next[10]</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">2.307 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">406.01 MHz ( period = 2.463 ns )</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1066_next[6]</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1066_next[10]</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">2.279 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">406.01 MHz ( period = 2.463 ns )</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1066_next[6]</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1066_next[5]</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">2.279 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">406.01 MHz ( period = 2.463 ns )</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1066_next[6]</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1066_next[3]</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">2.279 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">406.01 MHz ( period = 2.463 ns )</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1066_next[6]</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1066_next[0]</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">2.279 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">406.01 MHz ( period = 2.463 ns )</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1066_next[6]</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1066_next[9]</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">2.279 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">406.01 MHz ( period = 2.463 ns )</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1066_next[6]</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1066_next[6]</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">2.279 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">406.01 MHz ( period = 2.463 ns )</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1066_next[6]</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1066_next[2]</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">2.279 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">406.01 MHz ( period = 2.463 ns )</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1066_next[6]</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1066_next[4]</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">2.279 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">406.01 MHz ( period = 2.463 ns )</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1066_next[6]</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1066_next[1]</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">2.279 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">406.01 MHz ( period = 2.463 ns )</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1066_next[6]</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1066_next[8]</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">2.279 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">406.01 MHz ( period = 2.463 ns )</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1066_next[6]</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1066_next[7]</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">2.279 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">407.50 MHz ( period = 2.454 ns )</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1688_next[10]</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1066_next[9]</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">2.272 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">413.39 MHz ( period = 2.419 ns )</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1688_next[10]</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1066_next[8]</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">2.237 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">419.64 MHz ( period = 2.383 ns )</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1066_next[10]</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1066_next[10]</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">2.199 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">419.64 MHz ( period = 2.383 ns )</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1066_next[10]</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1066_next[5]</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">2.199 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">419.64 MHz ( period = 2.383 ns )</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1066_next[10]</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1066_next[3]</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">2.199 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">419.64 MHz ( period = 2.383 ns )</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1066_next[10]</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1066_next[0]</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">2.199 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">419.64 MHz ( period = 2.383 ns )</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1066_next[10]</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1066_next[9]</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">2.199 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">419.64 MHz ( period = 2.383 ns )</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1066_next[10]</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1066_next[6]</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">2.199 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">419.64 MHz ( period = 2.383 ns )</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1066_next[10]</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1066_next[2]</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">2.199 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">419.64 MHz ( period = 2.383 ns )</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1066_next[10]</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1066_next[4]</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">2.199 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">419.64 MHz ( period = 2.383 ns )</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1066_next[10]</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1066_next[1]</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">2.199 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">419.64 MHz ( period = 2.383 ns )</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1066_next[10]</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1066_next[8]</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">2.199 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">419.64 MHz ( period = 2.383 ns )</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1066_next[10]</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1066_next[7]</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">2.199 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">421.59 MHz ( period = 2.372 ns )</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1688_next[9]</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1066_next[10]</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">2.190 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">422.83 MHz ( period = 2.365 ns )</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1066_next[2]</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1066_next[10]</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">2.181 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">422.83 MHz ( period = 2.365 ns )</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1066_next[2]</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1066_next[5]</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">2.181 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">422.83 MHz ( period = 2.365 ns )</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1066_next[2]</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1066_next[3]</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">2.181 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">422.83 MHz ( period = 2.365 ns )</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1066_next[2]</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1066_next[0]</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">2.181 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">422.83 MHz ( period = 2.365 ns )</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1066_next[2]</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1066_next[9]</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">2.181 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">422.83 MHz ( period = 2.365 ns )</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1066_next[2]</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1066_next[6]</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">2.181 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">422.83 MHz ( period = 2.365 ns )</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1066_next[2]</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1066_next[2]</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">2.181 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">422.83 MHz ( period = 2.365 ns )</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1066_next[2]</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1066_next[4]</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">2.181 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">422.83 MHz ( period = 2.365 ns )</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1066_next[2]</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1066_next[1]</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">2.181 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">422.83 MHz ( period = 2.365 ns )</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1066_next[2]</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1066_next[8]</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">2.181 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">422.83 MHz ( period = 2.365 ns )</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1066_next[2]</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1066_next[7]</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">2.181 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">424.63 MHz ( period = 2.355 ns )</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1688_next[3]</TD>
+<TD ALIGN="LEFT">vga_control:inst|output_colour[3]</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">2.178 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">425.71 MHz ( period = 2.349 ns )</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1688_next[3]</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1066_next[10]</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">2.167 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">427.90 MHz ( period = 2.337 ns )</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1688_next[9]</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1066_next[9]</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">2.155 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">432.15 MHz ( period = 2.314 ns )</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1688_next[3]</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1066_next[9]</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">2.132 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">432.71 MHz ( period = 2.311 ns )</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1688_next[2]</TD>
+<TD ALIGN="LEFT">vga_control:inst|output_colour[10]</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">2.133 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">434.40 MHz ( period = 2.302 ns )</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1688_next[9]</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1066_next[8]</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">2.120 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">435.73 MHz ( period = 2.295 ns )</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1066_next[4]</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1066_next[10]</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">2.111 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">435.73 MHz ( period = 2.295 ns )</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1066_next[4]</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1066_next[5]</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">2.111 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">435.73 MHz ( period = 2.295 ns )</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1066_next[4]</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1066_next[3]</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">2.111 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">435.73 MHz ( period = 2.295 ns )</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1066_next[4]</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1066_next[0]</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">2.111 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">435.73 MHz ( period = 2.295 ns )</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1066_next[4]</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1066_next[9]</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">2.111 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">435.73 MHz ( period = 2.295 ns )</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1066_next[4]</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1066_next[6]</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">2.111 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">435.73 MHz ( period = 2.295 ns )</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1066_next[4]</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1066_next[2]</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">2.111 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">435.73 MHz ( period = 2.295 ns )</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1066_next[4]</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1066_next[4]</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">2.111 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">435.73 MHz ( period = 2.295 ns )</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1066_next[4]</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1066_next[1]</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">2.111 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">435.73 MHz ( period = 2.295 ns )</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1066_next[4]</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1066_next[8]</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">2.111 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">435.73 MHz ( period = 2.295 ns )</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1688_next[10]</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1066_next[7]</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">2.113 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">435.73 MHz ( period = 2.295 ns )</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1066_next[4]</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1066_next[7]</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">2.111 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">438.79 MHz ( period = 2.279 ns )</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1688_next[3]</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1066_next[8]</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">2.097 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">442.48 MHz ( period = 2.260 ns )</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1688_next[10]</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1066_next[6]</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">2.078 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">444.84 MHz ( period = 2.248 ns )</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1066_next[1]</TD>
+<TD ALIGN="LEFT">vga_control:inst|output_colour[3]</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">2.069 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">446.63 MHz ( period = 2.239 ns )</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1688_next[7]</TD>
+<TD ALIGN="LEFT">vga_control:inst|output_colour[10]</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">2.061 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">446.83 MHz ( period = 2.238 ns )</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1066_next[1]</TD>
+<TD ALIGN="LEFT">vga_control:inst|output_colour[10]</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">2.058 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">449.44 MHz ( period = 2.225 ns )</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1688_next[10]</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1066_next[5]</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">2.043 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">451.06 MHz ( period = 2.217 ns )</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1066_next[2]</TD>
+<TD ALIGN="LEFT">vga_control:inst|output_colour[3]</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">2.038 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">451.88 MHz ( period = 2.213 ns )</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1688_next[4]</TD>
+<TD ALIGN="LEFT">vga_control:inst|output_colour[3]</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">2.036 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">452.69 MHz ( period = 2.209 ns )</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1066_next[8]</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1066_next[10]</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">2.025 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">452.69 MHz ( period = 2.209 ns )</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1066_next[8]</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1066_next[5]</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">2.025 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">452.69 MHz ( period = 2.209 ns )</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1066_next[8]</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1066_next[3]</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">2.025 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">452.69 MHz ( period = 2.209 ns )</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1066_next[8]</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1066_next[0]</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">2.025 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">452.69 MHz ( period = 2.209 ns )</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1066_next[8]</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1066_next[9]</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">2.025 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">452.69 MHz ( period = 2.209 ns )</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1066_next[8]</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1066_next[6]</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">2.025 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">452.69 MHz ( period = 2.209 ns )</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1066_next[8]</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1066_next[2]</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">2.025 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">452.69 MHz ( period = 2.209 ns )</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1066_next[8]</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1066_next[4]</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">2.025 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">452.69 MHz ( period = 2.209 ns )</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1066_next[8]</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1066_next[1]</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">2.025 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">452.69 MHz ( period = 2.209 ns )</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1066_next[8]</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1066_next[8]</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">2.025 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">452.69 MHz ( period = 2.209 ns )</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1066_next[8]</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1066_next[7]</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">2.025 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">452.90 MHz ( period = 2.208 ns )</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1688_next[6]</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1066_next[10]</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">2.026 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">456.20 MHz ( period = 2.192 ns )</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1066_next[9]</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1066_next[10]</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">2.008 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">456.20 MHz ( period = 2.192 ns )</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1066_next[9]</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1066_next[5]</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">2.008 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">456.20 MHz ( period = 2.192 ns )</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1066_next[9]</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1066_next[3]</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">2.008 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">456.20 MHz ( period = 2.192 ns )</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1066_next[9]</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1066_next[0]</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">2.008 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">456.20 MHz ( period = 2.192 ns )</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1066_next[9]</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1066_next[9]</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">2.008 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">456.20 MHz ( period = 2.192 ns )</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1066_next[9]</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1066_next[6]</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">2.008 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">456.20 MHz ( period = 2.192 ns )</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1066_next[9]</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1066_next[2]</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">2.008 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">456.20 MHz ( period = 2.192 ns )</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1066_next[9]</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1066_next[4]</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">2.008 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">456.20 MHz ( period = 2.192 ns )</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1066_next[9]</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1066_next[1]</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">2.008 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">456.20 MHz ( period = 2.192 ns )</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1066_next[9]</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1066_next[8]</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">2.008 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">456.20 MHz ( period = 2.192 ns )</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1066_next[9]</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1066_next[7]</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">2.008 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">456.62 MHz ( period = 2.190 ns )</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1688_next[10]</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1066_next[4]</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">2.008 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">458.30 MHz ( period = 2.182 ns )</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1066_next[1]</TD>
+<TD ALIGN="LEFT">vga_control:inst|output_colour[7]</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">2.003 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">459.14 MHz ( period = 2.178 ns )</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1688_next[9]</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1066_next[7]</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">1.996 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">459.35 MHz ( period = 2.177 ns )</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1066_next[1]</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1066_next[10]</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">1.993 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">459.35 MHz ( period = 2.177 ns )</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1066_next[1]</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1066_next[5]</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">1.993 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">459.35 MHz ( period = 2.177 ns )</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1066_next[1]</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1066_next[3]</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">1.993 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">459.35 MHz ( period = 2.177 ns )</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1066_next[1]</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1066_next[0]</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">1.993 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">459.35 MHz ( period = 2.177 ns )</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1066_next[1]</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1066_next[9]</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">1.993 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">459.35 MHz ( period = 2.177 ns )</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1066_next[1]</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1066_next[6]</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">1.993 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">459.35 MHz ( period = 2.177 ns )</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1066_next[1]</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1066_next[2]</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">1.993 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">459.35 MHz ( period = 2.177 ns )</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1066_next[1]</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1066_next[4]</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">1.993 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">459.35 MHz ( period = 2.177 ns )</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1066_next[1]</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1066_next[1]</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">1.993 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">459.35 MHz ( period = 2.177 ns )</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1066_next[1]</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1066_next[8]</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">1.993 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">459.35 MHz ( period = 2.177 ns )</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1066_next[1]</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1066_next[7]</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">1.993 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">460.19 MHz ( period = 2.173 ns )</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1688_next[6]</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1066_next[9]</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">1.991 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">461.68 MHz ( period = 2.166 ns )</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1688_next[4]</TD>
+<TD ALIGN="LEFT">vga_control:inst|output_colour[10]</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">1.988 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">462.11 MHz ( period = 2.164 ns )</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1688_next[2]</TD>
+<TD ALIGN="LEFT">vga_control:inst|output_colour[7]</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">1.987 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">462.32 MHz ( period = 2.163 ns )</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1688_next[5]</TD>
+<TD ALIGN="LEFT">vga_control:inst|output_colour[10]</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">1.985 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">464.04 MHz ( period = 2.155 ns )</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1688_next[10]</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1066_next[3]</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">1.973 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">464.04 MHz ( period = 2.155 ns )</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1688_next[3]</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1066_next[7]</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">1.973 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">464.90 MHz ( period = 2.151 ns )</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1066_next[2]</TD>
+<TD ALIGN="LEFT">vga_control:inst|output_colour[7]</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">1.972 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">465.33 MHz ( period = 2.149 ns )</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1688_next[2]</TD>
+<TD ALIGN="LEFT">vga_control:inst|output_colour[3]</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">1.972 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">466.64 MHz ( period = 2.143 ns )</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1688_next[9]</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1066_next[6]</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">1.961 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">467.51 MHz ( period = 2.139 ns )</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1066_next[3]</TD>
+<TD ALIGN="LEFT">vga_control:inst|output_colour[10]</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">1.959 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">467.73 MHz ( period = 2.138 ns )</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1688_next[6]</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1066_next[8]</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">1.956 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">468.60 MHz ( period = 2.134 ns )</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1688_next[5]</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1066_next[10]</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">1.952 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">469.92 MHz ( period = 2.128 ns )</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1688_next[6]</TD>
+<TD ALIGN="LEFT">vga_control:inst|output_colour[3]</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">1.951 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">471.70 MHz ( period = 2.120 ns )</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1688_next[3]</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1066_next[6]</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">1.938 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">471.70 MHz ( period = 2.120 ns )</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1688_next[10]</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1066_next[2]</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">1.938 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">472.14 MHz ( period = 2.118 ns )</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1688_next[2]</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1066_next[10]</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">1.936 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">472.37 MHz ( period = 2.117 ns )</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1066_next[6]</TD>
+<TD ALIGN="LEFT">vga_control:inst|output_colour[3]</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">1.938 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">474.38 MHz ( period = 2.108 ns )</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1688_next[9]</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1066_next[5]</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">1.926 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">474.38 MHz ( period = 2.108 ns )</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1066_next[2]</TD>
+<TD ALIGN="LEFT">vga_control:inst|output_colour[10]</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">1.928 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">476.42 MHz ( period = 2.099 ns )</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1688_next[5]</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1066_next[9]</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">1.917 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">478.01 MHz ( period = 2.092 ns )</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1688_next[7]</TD>
+<TD ALIGN="LEFT">vga_control:inst|output_colour[7]</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">1.915 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">479.62 MHz ( period = 2.085 ns )</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1688_next[3]</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1066_next[5]</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">1.903 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">479.62 MHz ( period = 2.085 ns )</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1688_next[10]</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1066_next[1]</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">1.903 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">480.08 MHz ( period = 2.083 ns )</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1688_next[2]</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1066_next[9]</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">1.901 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">481.00 MHz ( period = 2.079 ns )</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1066_next[5]</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1066_next[10]</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">1.895 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">481.00 MHz ( period = 2.079 ns )</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1066_next[5]</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1066_next[5]</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">1.895 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">481.00 MHz ( period = 2.079 ns )</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1066_next[5]</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1066_next[3]</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">1.895 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">481.00 MHz ( period = 2.079 ns )</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1066_next[5]</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1066_next[0]</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">1.895 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">481.00 MHz ( period = 2.079 ns )</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1066_next[5]</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1066_next[9]</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">1.895 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">481.00 MHz ( period = 2.079 ns )</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1066_next[5]</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1066_next[6]</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">1.895 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">481.00 MHz ( period = 2.079 ns )</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1066_next[5]</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1066_next[2]</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">1.895 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">481.00 MHz ( period = 2.079 ns )</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1066_next[5]</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1066_next[4]</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">1.895 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">481.00 MHz ( period = 2.079 ns )</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1066_next[5]</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1066_next[1]</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">1.895 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">481.00 MHz ( period = 2.079 ns )</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1066_next[5]</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1066_next[8]</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">1.895 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">481.00 MHz ( period = 2.079 ns )</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1066_next[5]</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1066_next[7]</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">1.895 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">482.16 MHz ( period = 2.074 ns )</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1688_next[8]</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1066_next[10]</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">1.892 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">482.39 MHz ( period = 2.073 ns )</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1688_next[9]</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1066_next[4]</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">1.891 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">482.39 MHz ( period = 2.073 ns )</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1066_next[0]</TD>
+<TD ALIGN="LEFT">vga_control:inst|output_colour[3]</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">1.894 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">483.33 MHz ( period = 2.069 ns )</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1688_next[4]</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1066_next[10]</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">1.887 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">484.50 MHz ( period = 2.064 ns )</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1688_next[5]</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1066_next[8]</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">1.882 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">485.20 MHz ( period = 2.061 ns )</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1688_next[5]</TD>
+<TD ALIGN="LEFT">vga_control:inst|output_colour[3]</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">1.884 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">486.62 MHz ( period = 2.055 ns )</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1688_next[10]</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1688_next[7]</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">1.871 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">486.62 MHz ( period = 2.055 ns )</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1688_next[10]</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1688_next[8]</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">1.871 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">486.62 MHz ( period = 2.055 ns )</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1688_next[10]</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1688_next[0]</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">1.871 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">486.62 MHz ( period = 2.055 ns )</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1688_next[10]</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1688_next[2]</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">1.871 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">486.62 MHz ( period = 2.055 ns )</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1688_next[10]</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1688_next[1]</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">1.871 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">486.62 MHz ( period = 2.055 ns )</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1688_next[10]</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1688_next[6]</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">1.871 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">486.62 MHz ( period = 2.055 ns )</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1688_next[10]</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1688_next[3]</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">1.871 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">486.62 MHz ( period = 2.055 ns )</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1688_next[10]</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1688_next[10]</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">1.871 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">486.62 MHz ( period = 2.055 ns )</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1688_next[10]</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1688_next[9]</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">1.871 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">486.62 MHz ( period = 2.055 ns )</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1688_next[10]</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1688_next[4]</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">1.871 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">486.62 MHz ( period = 2.055 ns )</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1688_next[10]</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1688_next[5]</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">1.871 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">487.80 MHz ( period = 2.050 ns )</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1688_next[3]</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1066_next[4]</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">1.868 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">488.04 MHz ( period = 2.049 ns )</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1066_next[3]</TD>
+<TD ALIGN="LEFT">vga_control:inst|output_colour[7]</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">1.870 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">488.28 MHz ( period = 2.048 ns )</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1688_next[0]</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1066_next[10]</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">1.866 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">488.28 MHz ( period = 2.048 ns )</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1688_next[2]</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1066_next[8]</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">1.866 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">489.48 MHz ( period = 2.043 ns )</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1066_next[5]</TD>
+<TD ALIGN="LEFT">vga_control:inst|output_colour[3]</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">1.864 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">489.96 MHz ( period = 2.041 ns )</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1066_next[3]</TD>
+<TD ALIGN="LEFT">vga_control:inst|output_colour[3]</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">1.862 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">490.44 MHz ( period = 2.039 ns )</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1688_next[8]</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1066_next[9]</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">1.857 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">490.68 MHz ( period = 2.038 ns )</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1688_next[9]</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1066_next[3]</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">1.856 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">491.64 MHz ( period = 2.034 ns )</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1688_next[4]</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1066_next[9]</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">1.852 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">492.37 MHz ( period = 2.031 ns )</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1066_next[3]</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1066_next[10]</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">1.847 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">492.37 MHz ( period = 2.031 ns )</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1066_next[3]</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1066_next[5]</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">1.847 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">492.37 MHz ( period = 2.031 ns )</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1066_next[3]</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1066_next[3]</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">1.847 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">492.37 MHz ( period = 2.031 ns )</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1066_next[3]</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1066_next[0]</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">1.847 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">492.37 MHz ( period = 2.031 ns )</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1066_next[3]</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1066_next[9]</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">1.847 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">492.37 MHz ( period = 2.031 ns )</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1066_next[3]</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1066_next[6]</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">1.847 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">492.37 MHz ( period = 2.031 ns )</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1066_next[3]</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1066_next[2]</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">1.847 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">492.37 MHz ( period = 2.031 ns )</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1066_next[3]</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1066_next[4]</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">1.847 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">492.37 MHz ( period = 2.031 ns )</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1066_next[3]</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1066_next[1]</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">1.847 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">492.37 MHz ( period = 2.031 ns )</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1066_next[3]</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1066_next[8]</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">1.847 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">492.37 MHz ( period = 2.031 ns )</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1066_next[3]</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1066_next[7]</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">1.847 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">493.10 MHz ( period = 2.028 ns )</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1688_next[6]</TD>
+<TD ALIGN="LEFT">vga_control:inst|output_colour[10]</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">1.850 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">494.32 MHz ( period = 2.023 ns )</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1066_next[7]</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1066_next[10]</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">1.839 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">494.32 MHz ( period = 2.023 ns )</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1066_next[7]</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1066_next[5]</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">1.839 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">494.32 MHz ( period = 2.023 ns )</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1066_next[7]</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1066_next[3]</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">1.839 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">494.32 MHz ( period = 2.023 ns )</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1066_next[7]</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1066_next[0]</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">1.839 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">494.32 MHz ( period = 2.023 ns )</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1066_next[7]</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1066_next[9]</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">1.839 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">494.32 MHz ( period = 2.023 ns )</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1066_next[7]</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1066_next[6]</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">1.839 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">494.32 MHz ( period = 2.023 ns )</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1066_next[7]</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1066_next[2]</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">1.839 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">494.32 MHz ( period = 2.023 ns )</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1066_next[7]</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1066_next[4]</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">1.839 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">494.32 MHz ( period = 2.023 ns )</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1066_next[7]</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1066_next[1]</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">1.839 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">494.32 MHz ( period = 2.023 ns )</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1066_next[7]</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1066_next[8]</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">1.839 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">494.32 MHz ( period = 2.023 ns )</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1066_next[7]</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1066_next[7]</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">1.839 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">494.56 MHz ( period = 2.022 ns )</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1688_next[10]</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1066_next[0]</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">1.840 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">495.29 MHz ( period = 2.019 ns )</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1688_next[4]</TD>
+<TD ALIGN="LEFT">vga_control:inst|output_colour[7]</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">1.842 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">496.03 MHz ( period = 2.016 ns )</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1688_next[5]</TD>
+<TD ALIGN="LEFT">vga_control:inst|output_colour[7]</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">1.839 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">496.28 MHz ( period = 2.015 ns )</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1688_next[3]</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1066_next[3]</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">1.833 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">496.52 MHz ( period = 2.014 ns )</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1688_next[6]</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1066_next[7]</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">1.832 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">496.77 MHz ( period = 2.013 ns )</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1688_next[0]</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1066_next[9]</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">1.831 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">498.26 MHz ( period = 2.007 ns )</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1066_next[0]</TD>
+<TD ALIGN="LEFT">vga_control:inst|output_colour[7]</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">1.828 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">499.00 MHz ( period = 2.004 ns )</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1688_next[8]</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1066_next[8]</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">1.822 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">499.25 MHz ( period = 2.003 ns )</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1688_next[9]</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1066_next[2]</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">1.821 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">499.25 MHz ( period = 2.003 ns )</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1066_next[4]</TD>
+<TD ALIGN="LEFT">vga_control:inst|output_colour[3]</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">1.824 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">500.00 MHz ( period = 2.000 ns )</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1688_next[1]</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1066_next[10]</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">1.818 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">Restricted to 500.00 MHz ( period = 2.000 ns )</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1688_next[4]</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1066_next[8]</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">1.817 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">Restricted to 500.00 MHz ( period = 2.000 ns )</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1688_next[3]</TD>
+<TD ALIGN="LEFT">vga_control:inst|output_colour[7]</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">1.820 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">Restricted to 500.00 MHz ( period = 2.000 ns )</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1688_next[9]</TD>
+<TD ALIGN="LEFT">vga_control:inst|output_colour[3]</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">1.804 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">Restricted to 500.00 MHz ( period = 2.000 ns )</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1688_next[3]</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1066_next[2]</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">1.798 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">Restricted to 500.00 MHz ( period = 2.000 ns )</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1688_next[6]</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1066_next[6]</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">clk</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">1.797 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">Timing analysis restricted to 200 rows.</TD>
+<TD ALIGN="LEFT">To change the limit use Settings (Assignments menu)</TD>
+<TD ALIGN="LEFT">&nbsp;</TD>
+<TD ALIGN="LEFT">&nbsp;</TD>
+<TD ALIGN="LEFT">&nbsp;</TD>
+<TD ALIGN="LEFT">&nbsp;</TD>
+<TD ALIGN="LEFT">&nbsp;</TD>
+<TD ALIGN="LEFT">&nbsp;</TD>
+<TD ALIGN="LEFT">&nbsp;</TD>
+</TR>
+</TABLE>
+<P><A NAME="7"><HR></A></P>
+<TABLE WIDTH="100%" BORDER="0"><TR VALIGN="TOP">
+<TD><H2>tsu</H2></TD>
+<TD ALIGN="RIGHT"><A HREF="#top">Top</a></TD></TR></TABLE>
+<TABLE BORDER="1" cellspacing="1" cellpadding="2">
+<TR valign="middle" bgcolor="#C0C0C0">
+<TH>Slack</TH>
+<TH>Required tsu</TH>
+<TH>Actual tsu</TH>
+<TH>From</TH>
+<TH>To</TH>
+<TH>To Clock</TH>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">3.775 ns</TD>
+<TD ALIGN="LEFT">mode</TD>
+<TD ALIGN="LEFT">vga_control:inst|output_colour[3]</TD>
+<TD ALIGN="LEFT">clk</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">3.700 ns</TD>
+<TD ALIGN="LEFT">reset</TD>
+<TD ALIGN="LEFT">vga_control:inst|vsync</TD>
+<TD ALIGN="LEFT">clk</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">3.700 ns</TD>
+<TD ALIGN="LEFT">reset</TD>
+<TD ALIGN="LEFT">vga_control:inst|vsync_reg2</TD>
+<TD ALIGN="LEFT">clk</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">3.700 ns</TD>
+<TD ALIGN="LEFT">reset</TD>
+<TD ALIGN="LEFT">vga_control:inst|hsync</TD>
+<TD ALIGN="LEFT">clk</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">3.700 ns</TD>
+<TD ALIGN="LEFT">reset</TD>
+<TD ALIGN="LEFT">vga_control:inst|hsync_reg2</TD>
+<TD ALIGN="LEFT">clk</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">3.700 ns</TD>
+<TD ALIGN="LEFT">reset</TD>
+<TD ALIGN="LEFT">vga_control:inst|red[2]</TD>
+<TD ALIGN="LEFT">clk</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">3.700 ns</TD>
+<TD ALIGN="LEFT">reset</TD>
+<TD ALIGN="LEFT">vga_control:inst|red[1]</TD>
+<TD ALIGN="LEFT">clk</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">3.696 ns</TD>
+<TD ALIGN="LEFT">reset</TD>
+<TD ALIGN="LEFT">vga_control:inst|blue[3]</TD>
+<TD ALIGN="LEFT">clk</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">3.696 ns</TD>
+<TD ALIGN="LEFT">reset</TD>
+<TD ALIGN="LEFT">vga_control:inst|blue[2]</TD>
+<TD ALIGN="LEFT">clk</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">3.696 ns</TD>
+<TD ALIGN="LEFT">reset</TD>
+<TD ALIGN="LEFT">vga_control:inst|blue[1]</TD>
+<TD ALIGN="LEFT">clk</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">3.680 ns</TD>
+<TD ALIGN="LEFT">reset</TD>
+<TD ALIGN="LEFT">vga_control:inst|blue[0]</TD>
+<TD ALIGN="LEFT">clk</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">3.680 ns</TD>
+<TD ALIGN="LEFT">reset</TD>
+<TD ALIGN="LEFT">vga_control:inst|green[3]</TD>
+<TD ALIGN="LEFT">clk</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">3.680 ns</TD>
+<TD ALIGN="LEFT">reset</TD>
+<TD ALIGN="LEFT">vga_control:inst|green[2]</TD>
+<TD ALIGN="LEFT">clk</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">3.680 ns</TD>
+<TD ALIGN="LEFT">reset</TD>
+<TD ALIGN="LEFT">vga_control:inst|green[1]</TD>
+<TD ALIGN="LEFT">clk</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">3.680 ns</TD>
+<TD ALIGN="LEFT">reset</TD>
+<TD ALIGN="LEFT">vga_control:inst|green[0]</TD>
+<TD ALIGN="LEFT">clk</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">3.680 ns</TD>
+<TD ALIGN="LEFT">reset</TD>
+<TD ALIGN="LEFT">vga_control:inst|red[0]</TD>
+<TD ALIGN="LEFT">clk</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">3.593 ns</TD>
+<TD ALIGN="LEFT">mode</TD>
+<TD ALIGN="LEFT">vga_control:inst|output_colour[7]</TD>
+<TD ALIGN="LEFT">clk</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">3.437 ns</TD>
+<TD ALIGN="LEFT">mode</TD>
+<TD ALIGN="LEFT">vga_control:inst|output_colour[10]</TD>
+<TD ALIGN="LEFT">clk</TD>
+</TR>
+</TABLE>
+<P><A NAME="8"><HR></A></P>
+<TABLE WIDTH="100%" BORDER="0"><TR VALIGN="TOP">
+<TD><H2>tco</H2></TD>
+<TD ALIGN="RIGHT"><A HREF="#top">Top</a></TD></TR></TABLE>
+<TABLE BORDER="1" cellspacing="1" cellpadding="2">
+<TR valign="middle" bgcolor="#C0C0C0">
+<TH>Slack</TH>
+<TH>Required tco</TH>
+<TH>Actual tco</TH>
+<TH>From</TH>
+<TH>To</TH>
+<TH>From Clock</TH>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">7.943 ns</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1066_next[6]</TD>
+<TD ALIGN="LEFT">vfin</TD>
+<TD ALIGN="LEFT">clk</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">7.863 ns</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1066_next[10]</TD>
+<TD ALIGN="LEFT">vfin</TD>
+<TD ALIGN="LEFT">clk</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">7.845 ns</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1066_next[2]</TD>
+<TD ALIGN="LEFT">vfin</TD>
+<TD ALIGN="LEFT">clk</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">7.775 ns</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1066_next[4]</TD>
+<TD ALIGN="LEFT">vfin</TD>
+<TD ALIGN="LEFT">clk</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">7.689 ns</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1066_next[8]</TD>
+<TD ALIGN="LEFT">vfin</TD>
+<TD ALIGN="LEFT">clk</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">7.672 ns</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1066_next[9]</TD>
+<TD ALIGN="LEFT">vfin</TD>
+<TD ALIGN="LEFT">clk</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">7.657 ns</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1066_next[1]</TD>
+<TD ALIGN="LEFT">vfin</TD>
+<TD ALIGN="LEFT">clk</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">7.559 ns</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1066_next[5]</TD>
+<TD ALIGN="LEFT">vfin</TD>
+<TD ALIGN="LEFT">clk</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">7.511 ns</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1066_next[3]</TD>
+<TD ALIGN="LEFT">vfin</TD>
+<TD ALIGN="LEFT">clk</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">7.503 ns</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1066_next[7]</TD>
+<TD ALIGN="LEFT">vfin</TD>
+<TD ALIGN="LEFT">clk</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">7.335 ns</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1066_next[0]</TD>
+<TD ALIGN="LEFT">vfin</TD>
+<TD ALIGN="LEFT">clk</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">6.859 ns</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1688_next[6]</TD>
+<TD ALIGN="LEFT">counterh[6]</TD>
+<TD ALIGN="LEFT">clk</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">6.771 ns</TD>
+<TD ALIGN="LEFT">vga_control:inst|blue[1]</TD>
+<TD ALIGN="LEFT">blue[1]</TD>
+<TD ALIGN="LEFT">clk</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">6.728 ns</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1066_next[9]</TD>
+<TD ALIGN="LEFT">counterv[9]</TD>
+<TD ALIGN="LEFT">clk</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">6.610 ns</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1066_next[3]</TD>
+<TD ALIGN="LEFT">counterv[3]</TD>
+<TD ALIGN="LEFT">clk</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">6.582 ns</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1688_next[10]</TD>
+<TD ALIGN="LEFT">hfin</TD>
+<TD ALIGN="LEFT">clk</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">6.465 ns</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1688_next[9]</TD>
+<TD ALIGN="LEFT">hfin</TD>
+<TD ALIGN="LEFT">clk</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">6.442 ns</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1688_next[3]</TD>
+<TD ALIGN="LEFT">hfin</TD>
+<TD ALIGN="LEFT">clk</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">6.365 ns</TD>
+<TD ALIGN="LEFT">vga_control:inst|hsync</TD>
+<TD ALIGN="LEFT">hsync</TD>
+<TD ALIGN="LEFT">clk</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">6.344 ns</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1688_next[8]</TD>
+<TD ALIGN="LEFT">counterh[8]</TD>
+<TD ALIGN="LEFT">clk</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">6.330 ns</TD>
+<TD ALIGN="LEFT">vga_control:inst|red[2]</TD>
+<TD ALIGN="LEFT">red[2]</TD>
+<TD ALIGN="LEFT">clk</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">6.309 ns</TD>
+<TD ALIGN="LEFT">vga_control:inst|green[2]</TD>
+<TD ALIGN="LEFT">green[2]</TD>
+<TD ALIGN="LEFT">clk</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">6.309 ns</TD>
+<TD ALIGN="LEFT">vga_control:inst|vsync</TD>
+<TD ALIGN="LEFT">vsync</TD>
+<TD ALIGN="LEFT">clk</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">6.301 ns</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1688_next[6]</TD>
+<TD ALIGN="LEFT">hfin</TD>
+<TD ALIGN="LEFT">clk</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">6.251 ns</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1066_next[8]</TD>
+<TD ALIGN="LEFT">counterv[8]</TD>
+<TD ALIGN="LEFT">clk</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">6.246 ns</TD>
+<TD ALIGN="LEFT">vga_control:inst|blue[0]</TD>
+<TD ALIGN="LEFT">blue[0]</TD>
+<TD ALIGN="LEFT">clk</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">6.227 ns</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1688_next[5]</TD>
+<TD ALIGN="LEFT">hfin</TD>
+<TD ALIGN="LEFT">clk</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">6.210 ns</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1688_next[2]</TD>
+<TD ALIGN="LEFT">hfin</TD>
+<TD ALIGN="LEFT">clk</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">6.166 ns</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1688_next[8]</TD>
+<TD ALIGN="LEFT">hfin</TD>
+<TD ALIGN="LEFT">clk</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">6.162 ns</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1688_next[4]</TD>
+<TD ALIGN="LEFT">hfin</TD>
+<TD ALIGN="LEFT">clk</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">6.140 ns</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1688_next[0]</TD>
+<TD ALIGN="LEFT">hfin</TD>
+<TD ALIGN="LEFT">clk</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">6.092 ns</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1688_next[1]</TD>
+<TD ALIGN="LEFT">hfin</TD>
+<TD ALIGN="LEFT">clk</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">6.047 ns</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1688_next[7]</TD>
+<TD ALIGN="LEFT">hfin</TD>
+<TD ALIGN="LEFT">clk</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">6.001 ns</TD>
+<TD ALIGN="LEFT">vga_control:inst|red[0]</TD>
+<TD ALIGN="LEFT">red[0]</TD>
+<TD ALIGN="LEFT">clk</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">5.849 ns</TD>
+<TD ALIGN="LEFT">vga_control:inst|blue[2]</TD>
+<TD ALIGN="LEFT">blue[2]</TD>
+<TD ALIGN="LEFT">clk</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">5.785 ns</TD>
+<TD ALIGN="LEFT">vga_control:inst|blue[3]</TD>
+<TD ALIGN="LEFT">blue[3]</TD>
+<TD ALIGN="LEFT">clk</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">5.719 ns</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1688_next[9]</TD>
+<TD ALIGN="LEFT">counterh[9]</TD>
+<TD ALIGN="LEFT">clk</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">5.675 ns</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1066_next[2]</TD>
+<TD ALIGN="LEFT">counterv[2]</TD>
+<TD ALIGN="LEFT">clk</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">5.673 ns</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1066_next[6]</TD>
+<TD ALIGN="LEFT">counterv[6]</TD>
+<TD ALIGN="LEFT">clk</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">5.664 ns</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1066_next[4]</TD>
+<TD ALIGN="LEFT">counterv[4]</TD>
+<TD ALIGN="LEFT">clk</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">5.661 ns</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1066_next[1]</TD>
+<TD ALIGN="LEFT">counterv[1]</TD>
+<TD ALIGN="LEFT">clk</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">5.651 ns</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1688_next[2]</TD>
+<TD ALIGN="LEFT">counterh[2]</TD>
+<TD ALIGN="LEFT">clk</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">5.644 ns</TD>
+<TD ALIGN="LEFT">vga_control:inst|green[0]</TD>
+<TD ALIGN="LEFT">green[0]</TD>
+<TD ALIGN="LEFT">clk</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">5.636 ns</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1688_next[4]</TD>
+<TD ALIGN="LEFT">counterh[4]</TD>
+<TD ALIGN="LEFT">clk</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">5.631 ns</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1688_next[3]</TD>
+<TD ALIGN="LEFT">counterh[3]</TD>
+<TD ALIGN="LEFT">clk</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">5.629 ns</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1688_next[10]</TD>
+<TD ALIGN="LEFT">counterh[10]</TD>
+<TD ALIGN="LEFT">clk</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">5.603 ns</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1066_next[0]</TD>
+<TD ALIGN="LEFT">counterv[0]</TD>
+<TD ALIGN="LEFT">clk</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">5.576 ns</TD>
+<TD ALIGN="LEFT">vga_control:inst|green[1]</TD>
+<TD ALIGN="LEFT">green[1]</TD>
+<TD ALIGN="LEFT">clk</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">5.455 ns</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1066_next[5]</TD>
+<TD ALIGN="LEFT">counterv[5]</TD>
+<TD ALIGN="LEFT">clk</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">5.444 ns</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1688_next[1]</TD>
+<TD ALIGN="LEFT">counterh[1]</TD>
+<TD ALIGN="LEFT">clk</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">5.438 ns</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1066_next[10]</TD>
+<TD ALIGN="LEFT">counterv[10]</TD>
+<TD ALIGN="LEFT">clk</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">5.410 ns</TD>
+<TD ALIGN="LEFT">vga_control:inst|red[1]</TD>
+<TD ALIGN="LEFT">red[1]</TD>
+<TD ALIGN="LEFT">clk</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">5.405 ns</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1688_next[7]</TD>
+<TD ALIGN="LEFT">counterh[7]</TD>
+<TD ALIGN="LEFT">clk</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">5.385 ns</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1688_next[0]</TD>
+<TD ALIGN="LEFT">counterh[0]</TD>
+<TD ALIGN="LEFT">clk</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">5.383 ns</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1688_next[5]</TD>
+<TD ALIGN="LEFT">counterh[5]</TD>
+<TD ALIGN="LEFT">clk</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">5.363 ns</TD>
+<TD ALIGN="LEFT">vga_control:inst|count_1066_next[7]</TD>
+<TD ALIGN="LEFT">counterv[7]</TD>
+<TD ALIGN="LEFT">clk</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">5.350 ns</TD>
+<TD ALIGN="LEFT">vga_control:inst|green[3]</TD>
+<TD ALIGN="LEFT">green[3]</TD>
+<TD ALIGN="LEFT">clk</TD>
+</TR>
+</TABLE>
+<P><A NAME="9"><HR></A></P>
+<TABLE WIDTH="100%" BORDER="0"><TR VALIGN="TOP">
+<TD><H2>th</H2></TD>
+<TD ALIGN="RIGHT"><A HREF="#top">Top</a></TD></TR></TABLE>
+<TABLE BORDER="1" cellspacing="1" cellpadding="2">
+<TR valign="middle" bgcolor="#C0C0C0">
+<TH>Minimum Slack</TH>
+<TH>Required th</TH>
+<TH>Actual th</TH>
+<TH>From</TH>
+<TH>To</TH>
+<TH>To Clock</TH>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">-2.960 ns</TD>
+<TD ALIGN="LEFT">mode</TD>
+<TD ALIGN="LEFT">vga_control:inst|output_colour[3]</TD>
+<TD ALIGN="LEFT">clk</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">-3.004 ns</TD>
+<TD ALIGN="LEFT">mode</TD>
+<TD ALIGN="LEFT">vga_control:inst|output_colour[7]</TD>
+<TD ALIGN="LEFT">clk</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">-3.198 ns</TD>
+<TD ALIGN="LEFT">mode</TD>
+<TD ALIGN="LEFT">vga_control:inst|output_colour[10]</TD>
+<TD ALIGN="LEFT">clk</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">-3.441 ns</TD>
+<TD ALIGN="LEFT">reset</TD>
+<TD ALIGN="LEFT">vga_control:inst|blue[0]</TD>
+<TD ALIGN="LEFT">clk</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">-3.441 ns</TD>
+<TD ALIGN="LEFT">reset</TD>
+<TD ALIGN="LEFT">vga_control:inst|green[3]</TD>
+<TD ALIGN="LEFT">clk</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">-3.441 ns</TD>
+<TD ALIGN="LEFT">reset</TD>
+<TD ALIGN="LEFT">vga_control:inst|green[2]</TD>
+<TD ALIGN="LEFT">clk</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">-3.441 ns</TD>
+<TD ALIGN="LEFT">reset</TD>
+<TD ALIGN="LEFT">vga_control:inst|green[1]</TD>
+<TD ALIGN="LEFT">clk</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">-3.441 ns</TD>
+<TD ALIGN="LEFT">reset</TD>
+<TD ALIGN="LEFT">vga_control:inst|green[0]</TD>
+<TD ALIGN="LEFT">clk</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">-3.441 ns</TD>
+<TD ALIGN="LEFT">reset</TD>
+<TD ALIGN="LEFT">vga_control:inst|red[0]</TD>
+<TD ALIGN="LEFT">clk</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">-3.457 ns</TD>
+<TD ALIGN="LEFT">reset</TD>
+<TD ALIGN="LEFT">vga_control:inst|blue[3]</TD>
+<TD ALIGN="LEFT">clk</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">-3.457 ns</TD>
+<TD ALIGN="LEFT">reset</TD>
+<TD ALIGN="LEFT">vga_control:inst|blue[2]</TD>
+<TD ALIGN="LEFT">clk</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">-3.457 ns</TD>
+<TD ALIGN="LEFT">reset</TD>
+<TD ALIGN="LEFT">vga_control:inst|blue[1]</TD>
+<TD ALIGN="LEFT">clk</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">-3.461 ns</TD>
+<TD ALIGN="LEFT">reset</TD>
+<TD ALIGN="LEFT">vga_control:inst|vsync</TD>
+<TD ALIGN="LEFT">clk</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">-3.461 ns</TD>
+<TD ALIGN="LEFT">reset</TD>
+<TD ALIGN="LEFT">vga_control:inst|vsync_reg2</TD>
+<TD ALIGN="LEFT">clk</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">-3.461 ns</TD>
+<TD ALIGN="LEFT">reset</TD>
+<TD ALIGN="LEFT">vga_control:inst|hsync</TD>
+<TD ALIGN="LEFT">clk</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">-3.461 ns</TD>
+<TD ALIGN="LEFT">reset</TD>
+<TD ALIGN="LEFT">vga_control:inst|hsync_reg2</TD>
+<TD ALIGN="LEFT">clk</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">-3.461 ns</TD>
+<TD ALIGN="LEFT">reset</TD>
+<TD ALIGN="LEFT">vga_control:inst|red[2]</TD>
+<TD ALIGN="LEFT">clk</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">-3.461 ns</TD>
+<TD ALIGN="LEFT">reset</TD>
+<TD ALIGN="LEFT">vga_control:inst|red[1]</TD>
+<TD ALIGN="LEFT">clk</TD>
+</TR>
+</TABLE>
+<P><A NAME="10"><HR></A></P>
+<TABLE WIDTH="100%" BORDER="0"><TR VALIGN="TOP">
+<TD><H2>Timing Analyzer Messages</H2></TD>
+<TD ALIGN="RIGHT"><A HREF="#top">Top</a></TD></TR></TABLE>
+<PRE>
+Info: *******************************************************************
+Info: Running Quartus II Classic Timing Analyzer
+    Info: Version 9.0 Build 184 04/29/2009 Service Pack 1 SJ Web Edition
+    Info: Processing started: Tue Oct 10 15:38:51 2017
+Info: Command: quartus_tan --read_settings_files=off --write_settings_files=off Lab3 -c Lab3 --timing_analysis_only
+Warning: Found pins functioning as undefined clocks and/or memory enables
+    Info: Assuming node "clk" is an undefined clock
+Info: Clock "clk" has Internal fmax of 401.77 MHz between source register "vga_control:inst|count_1688_next[10]" and destination register "vga_control:inst|count_1066_next[10]" (period= 2.489 ns)
+    Info: + Longest register to register delay is 2.307 ns
+        Info: 1: + IC(0.000 ns) + CELL(0.000 ns) = 0.000 ns; Loc. = LCFF_X6_Y8_N21; Fanout = 7; REG Node = 'vga_control:inst|count_1688_next[10]'
+        Info: 2: + IC(0.537 ns) + CELL(0.357 ns) = 0.894 ns; Loc. = LCCOMB_X7_Y8_N30; Fanout = 2; COMB Node = 'vga_control:inst|Equal0~2'
+        Info: 3: + IC(0.207 ns) + CELL(0.053 ns) = 1.154 ns; Loc. = LCCOMB_X7_Y8_N26; Fanout = 13; COMB Node = 'vga_control:inst|Equal0~1DUPLICATE'
+        Info: 4: + IC(0.218 ns) + CELL(0.309 ns) = 1.681 ns; Loc. = LCCOMB_X7_Y8_N0; Fanout = 2; COMB Node = 'vga_control:inst|Add1~2'
+        Info: 5: + IC(0.000 ns) + CELL(0.035 ns) = 1.716 ns; Loc. = LCCOMB_X7_Y8_N2; Fanout = 2; COMB Node = 'vga_control:inst|Add1~6'
+        Info: 6: + IC(0.000 ns) + CELL(0.035 ns) = 1.751 ns; Loc. = LCCOMB_X7_Y8_N4; Fanout = 2; COMB Node = 'vga_control:inst|Add1~10'
+        Info: 7: + IC(0.000 ns) + CELL(0.035 ns) = 1.786 ns; Loc. = LCCOMB_X7_Y8_N6; Fanout = 2; COMB Node = 'vga_control:inst|Add1~14'
+        Info: 8: + IC(0.000 ns) + CELL(0.035 ns) = 1.821 ns; Loc. = LCCOMB_X7_Y8_N8; Fanout = 2; COMB Node = 'vga_control:inst|Add1~18'
+        Info: 9: + IC(0.000 ns) + CELL(0.035 ns) = 1.856 ns; Loc. = LCCOMB_X7_Y8_N10; Fanout = 2; COMB Node = 'vga_control:inst|Add1~22'
+        Info: 10: + IC(0.000 ns) + CELL(0.035 ns) = 1.891 ns; Loc. = LCCOMB_X7_Y8_N12; Fanout = 2; COMB Node = 'vga_control:inst|Add1~26'
+        Info: 11: + IC(0.000 ns) + CELL(0.124 ns) = 2.015 ns; Loc. = LCCOMB_X7_Y8_N14; Fanout = 2; COMB Node = 'vga_control:inst|Add1~30'
+        Info: 12: + IC(0.000 ns) + CELL(0.035 ns) = 2.050 ns; Loc. = LCCOMB_X7_Y8_N16; Fanout = 2; COMB Node = 'vga_control:inst|Add1~34'
+        Info: 13: + IC(0.000 ns) + CELL(0.035 ns) = 2.085 ns; Loc. = LCCOMB_X7_Y8_N18; Fanout = 1; COMB Node = 'vga_control:inst|Add1~38'
+        Info: 14: + IC(0.000 ns) + CELL(0.125 ns) = 2.210 ns; Loc. = LCCOMB_X7_Y8_N20; Fanout = 1; COMB Node = 'vga_control:inst|Add1~41'
+        Info: 15: + IC(0.000 ns) + CELL(0.097 ns) = 2.307 ns; Loc. = LCFF_X7_Y8_N21; Fanout = 7; REG Node = 'vga_control:inst|count_1066_next[10]'
+        Info: Total cell delay = 1.345 ns ( 58.30 % )
+        Info: Total interconnect delay = 0.962 ns ( 41.70 % )
+    Info: - Smallest clock skew is 0.002 ns
+        Info: + Shortest clock path from clock "clk" to destination register is 2.476 ns
+            Info: 1: + IC(0.000 ns) + CELL(0.854 ns) = 0.854 ns; Loc. = PIN_N20; Fanout = 1; CLK Node = 'clk'
+            Info: 2: + IC(0.343 ns) + CELL(0.000 ns) = 1.197 ns; Loc. = CLKCTRL_G3; Fanout = 40; COMB Node = 'clk~clkctrl'
+            Info: 3: + IC(0.661 ns) + CELL(0.618 ns) = 2.476 ns; Loc. = LCFF_X7_Y8_N21; Fanout = 7; REG Node = 'vga_control:inst|count_1066_next[10]'
+            Info: Total cell delay = 1.472 ns ( 59.45 % )
+            Info: Total interconnect delay = 1.004 ns ( 40.55 % )
+        Info: - Longest clock path from clock "clk" to source register is 2.474 ns
+            Info: 1: + IC(0.000 ns) + CELL(0.854 ns) = 0.854 ns; Loc. = PIN_N20; Fanout = 1; CLK Node = 'clk'
+            Info: 2: + IC(0.343 ns) + CELL(0.000 ns) = 1.197 ns; Loc. = CLKCTRL_G3; Fanout = 40; COMB Node = 'clk~clkctrl'
+            Info: 3: + IC(0.659 ns) + CELL(0.618 ns) = 2.474 ns; Loc. = LCFF_X6_Y8_N21; Fanout = 7; REG Node = 'vga_control:inst|count_1688_next[10]'
+            Info: Total cell delay = 1.472 ns ( 59.50 % )
+            Info: Total interconnect delay = 1.002 ns ( 40.50 % )
+    Info: + Micro clock to output delay of source is 0.094 ns
+    Info: + Micro setup delay of destination is 0.090 ns
+Info: tsu for register "vga_control:inst|output_colour[3]" (data pin = "mode", clock pin = "clk") is 3.775 ns
+    Info: + Longest pin to register delay is 6.166 ns
+        Info: 1: + IC(0.000 ns) + CELL(0.830 ns) = 0.830 ns; Loc. = PIN_R2; Fanout = 5; PIN Node = 'mode'
+        Info: 2: + IC(4.387 ns) + CELL(0.357 ns) = 5.574 ns; Loc. = LCCOMB_X10_Y8_N12; Fanout = 1; COMB Node = 'vga_control:inst|output_colour~38'
+        Info: 3: + IC(0.212 ns) + CELL(0.225 ns) = 6.011 ns; Loc. = LCCOMB_X10_Y8_N22; Fanout = 1; COMB Node = 'vga_control:inst|output_colour~41'
+        Info: 4: + IC(0.000 ns) + CELL(0.155 ns) = 6.166 ns; Loc. = LCFF_X10_Y8_N23; Fanout = 4; REG Node = 'vga_control:inst|output_colour[3]'
+        Info: Total cell delay = 1.567 ns ( 25.41 % )
+        Info: Total interconnect delay = 4.599 ns ( 74.59 % )
+    Info: + Micro setup delay of destination is 0.090 ns
+    Info: - Shortest clock path from clock "clk" to destination register is 2.481 ns
+        Info: 1: + IC(0.000 ns) + CELL(0.854 ns) = 0.854 ns; Loc. = PIN_N20; Fanout = 1; CLK Node = 'clk'
+        Info: 2: + IC(0.343 ns) + CELL(0.000 ns) = 1.197 ns; Loc. = CLKCTRL_G3; Fanout = 40; COMB Node = 'clk~clkctrl'
+        Info: 3: + IC(0.666 ns) + CELL(0.618 ns) = 2.481 ns; Loc. = LCFF_X10_Y8_N23; Fanout = 4; REG Node = 'vga_control:inst|output_colour[3]'
+        Info: Total cell delay = 1.472 ns ( 59.33 % )
+        Info: Total interconnect delay = 1.009 ns ( 40.67 % )
+Info: tco from clock "clk" to destination pin "vfin" through register "vga_control:inst|count_1066_next[6]" is 7.943 ns
+    Info: + Longest clock path from clock "clk" to source register is 2.476 ns
+        Info: 1: + IC(0.000 ns) + CELL(0.854 ns) = 0.854 ns; Loc. = PIN_N20; Fanout = 1; CLK Node = 'clk'
+        Info: 2: + IC(0.343 ns) + CELL(0.000 ns) = 1.197 ns; Loc. = CLKCTRL_G3; Fanout = 40; COMB Node = 'clk~clkctrl'
+        Info: 3: + IC(0.661 ns) + CELL(0.618 ns) = 2.476 ns; Loc. = LCFF_X7_Y8_N13; Fanout = 7; REG Node = 'vga_control:inst|count_1066_next[6]'
+        Info: Total cell delay = 1.472 ns ( 59.45 % )
+        Info: Total interconnect delay = 1.004 ns ( 40.55 % )
+    Info: + Micro clock to output delay of source is 0.094 ns
+    Info: + Longest register to pin delay is 5.373 ns
+        Info: 1: + IC(0.000 ns) + CELL(0.000 ns) = 0.000 ns; Loc. = LCFF_X7_Y8_N13; Fanout = 7; REG Node = 'vga_control:inst|count_1066_next[6]'
+        Info: 2: + IC(0.558 ns) + CELL(0.346 ns) = 0.904 ns; Loc. = LCCOMB_X9_Y8_N14; Fanout = 2; COMB Node = 'vga_control:inst|Equal1~1'
+        Info: 3: + IC(0.245 ns) + CELL(0.228 ns) = 1.377 ns; Loc. = LCCOMB_X9_Y8_N18; Fanout = 12; COMB Node = 'vga_control:inst|Equal1~2'
+        Info: 4: + IC(2.054 ns) + CELL(1.942 ns) = 5.373 ns; Loc. = PIN_H14; Fanout = 0; PIN Node = 'vfin'
+        Info: Total cell delay = 2.516 ns ( 46.83 % )
+        Info: Total interconnect delay = 2.857 ns ( 53.17 % )
+Info: th for register "vga_control:inst|output_colour[3]" (data pin = "mode", clock pin = "clk") is -2.960 ns
+    Info: + Longest clock path from clock "clk" to destination register is 2.481 ns
+        Info: 1: + IC(0.000 ns) + CELL(0.854 ns) = 0.854 ns; Loc. = PIN_N20; Fanout = 1; CLK Node = 'clk'
+        Info: 2: + IC(0.343 ns) + CELL(0.000 ns) = 1.197 ns; Loc. = CLKCTRL_G3; Fanout = 40; COMB Node = 'clk~clkctrl'
+        Info: 3: + IC(0.666 ns) + CELL(0.618 ns) = 2.481 ns; Loc. = LCFF_X10_Y8_N23; Fanout = 4; REG Node = 'vga_control:inst|output_colour[3]'
+        Info: Total cell delay = 1.472 ns ( 59.33 % )
+        Info: Total interconnect delay = 1.009 ns ( 40.67 % )
+    Info: + Micro hold delay of destination is 0.149 ns
+    Info: - Shortest pin to register delay is 5.590 ns
+        Info: 1: + IC(0.000 ns) + CELL(0.830 ns) = 0.830 ns; Loc. = PIN_R2; Fanout = 5; PIN Node = 'mode'
+        Info: 2: + IC(4.377 ns) + CELL(0.228 ns) = 5.435 ns; Loc. = LCCOMB_X10_Y8_N22; Fanout = 1; COMB Node = 'vga_control:inst|output_colour~41'
+        Info: 3: + IC(0.000 ns) + CELL(0.155 ns) = 5.590 ns; Loc. = LCFF_X10_Y8_N23; Fanout = 4; REG Node = 'vga_control:inst|output_colour[3]'
+        Info: Total cell delay = 1.213 ns ( 21.70 % )
+        Info: Total interconnect delay = 4.377 ns ( 78.30 % )
+Info: Quartus II Classic Timing Analyzer was successful. 0 errors, 1 warning
+    Info: Peak virtual memory: 212 megabytes
+    Info: Processing ended: Tue Oct 10 15:38:51 2017
+    Info: Elapsed time: 00:00:00
+    Info: Total CPU time (on all processors): 00:00:00
+</PRE>
+<HR>
+
+<A HREF="#top">Top</A>
+
+</BODY>
+
+</HTML>
+

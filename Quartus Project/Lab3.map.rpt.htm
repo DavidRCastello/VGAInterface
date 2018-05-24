@@ -1,0 +1,806 @@
+<HTML>
+
+<HEAD>
+<TITLE>Analysis & Synthesis report for Lab3</TITLE>
+</HEAD>
+
+<BODY>
+
+<A NAME="top"></A>
+
+<CENTER>
+<H1>Analysis & Synthesis report for Lab3</H1>
+<H3>Tue Oct 10 15:38:42 2017<BR>
+Quartus II Version 9.0 Build 184 04/29/2009 Service Pack 1 SJ Web Edition</H3>
+</CENTER>
+
+<P><HR></P>
+<TABLE WIDTH="100%" BORDER="0"><TR VALIGN="TOP">
+<TD><H2>Table of Contents</H2></TD>
+<TD ALIGN="RIGHT"><A HREF="#top">Top</a></TD></TR></TABLE>
+<OL>
+<LI><A HREF="#1">Legal Notice</A></LI>
+<LI><A HREF="#2">Analysis & Synthesis Summary</A></LI>
+<LI><A HREF="#3">Analysis & Synthesis Settings</A></LI>
+<LI><A HREF="#4">Analysis & Synthesis Source Files Read</A></LI>
+<LI><A HREF="#5">Analysis & Synthesis Resource Usage Summary</A></LI>
+<LI><A HREF="#6">Analysis & Synthesis Resource Utilization by Entity</A></LI>
+<LI><A HREF="#7">Registers Removed During Synthesis</A></LI>
+<LI><A HREF="#8">Removed Registers Triggering Further Register Optimizations</A></LI>
+<LI><A HREF="#9">General Register Statistics</A></LI>
+<LI><A HREF="#10">Analysis & Synthesis Messages</A></LI>
+</OL>
+
+<P><A NAME="1"><HR></A></P>
+<TABLE WIDTH="100%" BORDER="0"><TR VALIGN="TOP">
+<TD><H2>Legal Notice</H2></TD>
+<TD ALIGN="RIGHT"><A HREF="#top">Top</a></TD></TR></TABLE>
+<PRE>Copyright (C) 1991-2009 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+</PRE>
+
+<P><A NAME="2"><HR></A></P>
+<TABLE WIDTH="100%" BORDER="0"><TR VALIGN="TOP">
+<TD><H2>Analysis & Synthesis Summary</H2></TD>
+<TD ALIGN="RIGHT"><A HREF="#top">Top</a></TD></TR></TABLE>
+<TABLE BORDER="1" cellspacing="1" cellpadding="2">
+<TR valign="middle">
+<TD ALIGN="LEFT">Analysis & Synthesis Status</TH>
+<TD ALIGN="LEFT">Successful - Tue Oct 10 15:38:42 2017</TH>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">Quartus II Version</TD>
+<TD ALIGN="LEFT">9.0 Build 184 04/29/2009 SP 1 SJ Web Edition</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">Revision Name</TD>
+<TD ALIGN="LEFT">Lab3</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">Top-level Entity Name</TD>
+<TD ALIGN="LEFT">Lab3</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">Family</TD>
+<TD ALIGN="LEFT">Stratix II</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">Logic utilization</TD>
+<TD ALIGN="LEFT">N/A</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">&nbsp;&nbsp;&nbsp;&nbsp;Combinational ALUTs</TD>
+<TD ALIGN="LEFT">48</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">&nbsp;&nbsp;&nbsp;&nbsp;Dedicated logic registers</TD>
+<TD ALIGN="LEFT">40</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">Total registers</TD>
+<TD ALIGN="LEFT">40</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">Total pins</TD>
+<TD ALIGN="LEFT">41</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">Total virtual pins</TD>
+<TD ALIGN="LEFT">0</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">Total block memory bits</TD>
+<TD ALIGN="LEFT">0</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">DSP block 9-bit elements</TD>
+<TD ALIGN="LEFT">0</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">Total PLLs</TD>
+<TD ALIGN="LEFT">0</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">Total DLLs</TD>
+<TD ALIGN="LEFT">0</TD>
+</TR>
+</TABLE>
+<P><A NAME="3"><HR></A></P>
+<TABLE WIDTH="100%" BORDER="0"><TR VALIGN="TOP">
+<TD><H2>Analysis & Synthesis Settings</H2></TD>
+<TD ALIGN="RIGHT"><A HREF="#top">Top</a></TD></TR></TABLE>
+<TABLE BORDER="1" cellspacing="1" cellpadding="2">
+<TR valign="middle" bgcolor="#C0C0C0">
+<TH>Option</TH>
+<TH>Setting</TH>
+<TH>Default Value</TH>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">Top-level entity name</TD>
+<TD ALIGN="LEFT">Lab3</TD>
+<TD ALIGN="LEFT">Lab3</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">Family name</TD>
+<TD ALIGN="LEFT">Stratix II</TD>
+<TD ALIGN="LEFT">Stratix II</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">Use Generated Physical Constraints File</TD>
+<TD ALIGN="LEFT">Off</TD>
+<TD ALIGN="LEFT">&nbsp;</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">Use smart compilation</TD>
+<TD ALIGN="LEFT">Off</TD>
+<TD ALIGN="LEFT">Off</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">Restructure Multiplexers</TD>
+<TD ALIGN="LEFT">Auto</TD>
+<TD ALIGN="LEFT">Auto</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">Create Debugging Nodes for IP Cores</TD>
+<TD ALIGN="LEFT">Off</TD>
+<TD ALIGN="LEFT">Off</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">Preserve fewer node names</TD>
+<TD ALIGN="LEFT">On</TD>
+<TD ALIGN="LEFT">On</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">Disable OpenCore Plus hardware evaluation</TD>
+<TD ALIGN="LEFT">Off</TD>
+<TD ALIGN="LEFT">Off</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">Verilog Version</TD>
+<TD ALIGN="LEFT">Verilog_2001</TD>
+<TD ALIGN="LEFT">Verilog_2001</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">VHDL Version</TD>
+<TD ALIGN="LEFT">VHDL93</TD>
+<TD ALIGN="LEFT">VHDL93</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">State Machine Processing</TD>
+<TD ALIGN="LEFT">Auto</TD>
+<TD ALIGN="LEFT">Auto</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">Safe State Machine</TD>
+<TD ALIGN="LEFT">Off</TD>
+<TD ALIGN="LEFT">Off</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">Extract Verilog State Machines</TD>
+<TD ALIGN="LEFT">On</TD>
+<TD ALIGN="LEFT">On</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">Extract VHDL State Machines</TD>
+<TD ALIGN="LEFT">On</TD>
+<TD ALIGN="LEFT">On</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">Ignore Verilog initial constructs</TD>
+<TD ALIGN="LEFT">Off</TD>
+<TD ALIGN="LEFT">Off</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">Iteration limit for constant Verilog loops</TD>
+<TD ALIGN="LEFT">5000</TD>
+<TD ALIGN="LEFT">5000</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">Iteration limit for non-constant Verilog loops</TD>
+<TD ALIGN="LEFT">250</TD>
+<TD ALIGN="LEFT">250</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">Add Pass-Through Logic to Inferred RAMs</TD>
+<TD ALIGN="LEFT">On</TD>
+<TD ALIGN="LEFT">On</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">Parallel Synthesis</TD>
+<TD ALIGN="LEFT">Off</TD>
+<TD ALIGN="LEFT">Off</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">DSP Block Balancing</TD>
+<TD ALIGN="LEFT">Auto</TD>
+<TD ALIGN="LEFT">Auto</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">NOT Gate Push-Back</TD>
+<TD ALIGN="LEFT">On</TD>
+<TD ALIGN="LEFT">On</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">Power-Up Don't Care</TD>
+<TD ALIGN="LEFT">On</TD>
+<TD ALIGN="LEFT">On</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">Remove Redundant Logic Cells</TD>
+<TD ALIGN="LEFT">Off</TD>
+<TD ALIGN="LEFT">Off</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">Remove Duplicate Registers</TD>
+<TD ALIGN="LEFT">On</TD>
+<TD ALIGN="LEFT">On</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">Ignore CARRY Buffers</TD>
+<TD ALIGN="LEFT">Off</TD>
+<TD ALIGN="LEFT">Off</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">Ignore CASCADE Buffers</TD>
+<TD ALIGN="LEFT">Off</TD>
+<TD ALIGN="LEFT">Off</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">Ignore GLOBAL Buffers</TD>
+<TD ALIGN="LEFT">Off</TD>
+<TD ALIGN="LEFT">Off</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">Ignore ROW GLOBAL Buffers</TD>
+<TD ALIGN="LEFT">Off</TD>
+<TD ALIGN="LEFT">Off</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">Ignore LCELL Buffers</TD>
+<TD ALIGN="LEFT">Off</TD>
+<TD ALIGN="LEFT">Off</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">Ignore SOFT Buffers</TD>
+<TD ALIGN="LEFT">On</TD>
+<TD ALIGN="LEFT">On</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">Limit AHDL Integers to 32 Bits</TD>
+<TD ALIGN="LEFT">Off</TD>
+<TD ALIGN="LEFT">Off</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">Optimization Technique</TD>
+<TD ALIGN="LEFT">Balanced</TD>
+<TD ALIGN="LEFT">Balanced</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">Carry Chain Length</TD>
+<TD ALIGN="LEFT">70</TD>
+<TD ALIGN="LEFT">70</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">Auto Carry Chains</TD>
+<TD ALIGN="LEFT">On</TD>
+<TD ALIGN="LEFT">On</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">Auto Open-Drain Pins</TD>
+<TD ALIGN="LEFT">On</TD>
+<TD ALIGN="LEFT">On</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">Perform WYSIWYG Primitive Resynthesis</TD>
+<TD ALIGN="LEFT">Off</TD>
+<TD ALIGN="LEFT">Off</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">Auto ROM Replacement</TD>
+<TD ALIGN="LEFT">On</TD>
+<TD ALIGN="LEFT">On</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">Auto RAM Replacement</TD>
+<TD ALIGN="LEFT">On</TD>
+<TD ALIGN="LEFT">On</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">Auto DSP Block Replacement</TD>
+<TD ALIGN="LEFT">On</TD>
+<TD ALIGN="LEFT">On</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">Auto Shift Register Replacement</TD>
+<TD ALIGN="LEFT">Auto</TD>
+<TD ALIGN="LEFT">Auto</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">Auto Clock Enable Replacement</TD>
+<TD ALIGN="LEFT">On</TD>
+<TD ALIGN="LEFT">On</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">Strict RAM Replacement</TD>
+<TD ALIGN="LEFT">Off</TD>
+<TD ALIGN="LEFT">Off</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">Allow Synchronous Control Signals</TD>
+<TD ALIGN="LEFT">On</TD>
+<TD ALIGN="LEFT">On</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">Force Use of Synchronous Clear Signals</TD>
+<TD ALIGN="LEFT">Off</TD>
+<TD ALIGN="LEFT">Off</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">Auto RAM Block Balancing</TD>
+<TD ALIGN="LEFT">On</TD>
+<TD ALIGN="LEFT">On</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">Auto RAM to Logic Cell Conversion</TD>
+<TD ALIGN="LEFT">Off</TD>
+<TD ALIGN="LEFT">Off</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">Auto Resource Sharing</TD>
+<TD ALIGN="LEFT">Off</TD>
+<TD ALIGN="LEFT">Off</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">Allow Any RAM Size For Recognition</TD>
+<TD ALIGN="LEFT">Off</TD>
+<TD ALIGN="LEFT">Off</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">Allow Any ROM Size For Recognition</TD>
+<TD ALIGN="LEFT">Off</TD>
+<TD ALIGN="LEFT">Off</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">Allow Any Shift Register Size For Recognition</TD>
+<TD ALIGN="LEFT">Off</TD>
+<TD ALIGN="LEFT">Off</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">Use LogicLock Constraints during Resource Balancing</TD>
+<TD ALIGN="LEFT">On</TD>
+<TD ALIGN="LEFT">On</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">Ignore translate_off and synthesis_off directives</TD>
+<TD ALIGN="LEFT">Off</TD>
+<TD ALIGN="LEFT">Off</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">Timing-Driven Synthesis</TD>
+<TD ALIGN="LEFT">Off</TD>
+<TD ALIGN="LEFT">Off</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">Show Parameter Settings Tables in Synthesis Report</TD>
+<TD ALIGN="LEFT">On</TD>
+<TD ALIGN="LEFT">On</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">Ignore Maximum Fan-Out Assignments</TD>
+<TD ALIGN="LEFT">Off</TD>
+<TD ALIGN="LEFT">Off</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">Synchronization Register Chain Length</TD>
+<TD ALIGN="LEFT">2</TD>
+<TD ALIGN="LEFT">2</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">PowerPlay Power Optimization</TD>
+<TD ALIGN="LEFT">Normal compilation</TD>
+<TD ALIGN="LEFT">Normal compilation</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">HDL message level</TD>
+<TD ALIGN="LEFT">Level2</TD>
+<TD ALIGN="LEFT">Level2</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">Suppress Register Optimization Related Messages</TD>
+<TD ALIGN="LEFT">Off</TD>
+<TD ALIGN="LEFT">Off</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">Number of Removed Registers Reported in Synthesis Report</TD>
+<TD ALIGN="LEFT">100</TD>
+<TD ALIGN="LEFT">100</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">Number of Inverted Registers Reported in Synthesis Report</TD>
+<TD ALIGN="LEFT">100</TD>
+<TD ALIGN="LEFT">100</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">Clock MUX Protection</TD>
+<TD ALIGN="LEFT">On</TD>
+<TD ALIGN="LEFT">On</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">Auto Gated Clock Conversion</TD>
+<TD ALIGN="LEFT">Off</TD>
+<TD ALIGN="LEFT">Off</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">Block Design Naming</TD>
+<TD ALIGN="LEFT">Auto</TD>
+<TD ALIGN="LEFT">Auto</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">SDC constraint protection</TD>
+<TD ALIGN="LEFT">Off</TD>
+<TD ALIGN="LEFT">Off</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">Synthesis Effort</TD>
+<TD ALIGN="LEFT">Auto</TD>
+<TD ALIGN="LEFT">Auto</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">Shift Register Replacement - Allow Asynchronous Clear Signal</TD>
+<TD ALIGN="LEFT">On</TD>
+<TD ALIGN="LEFT">On</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">Analysis & Synthesis Message Level</TD>
+<TD ALIGN="LEFT">Medium</TD>
+<TD ALIGN="LEFT">Medium</TD>
+</TR>
+</TABLE>
+<P><A NAME="4"><HR></A></P>
+<TABLE WIDTH="100%" BORDER="0"><TR VALIGN="TOP">
+<TD><H2>Analysis & Synthesis Source Files Read</H2></TD>
+<TD ALIGN="RIGHT"><A HREF="#top">Top</a></TD></TR></TABLE>
+<TABLE BORDER="1" cellspacing="1" cellpadding="2">
+<TR valign="middle" bgcolor="#C0C0C0">
+<TH>File Name with User-Entered Path</TH>
+<TH>Used in Netlist</TH>
+<TH>File Type</TH>
+<TH>File Name with Absolute Path</TH>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">vga.vhd</TD>
+<TD ALIGN="LEFT">yes</TD>
+<TD ALIGN="LEFT">User VHDL File </TD>
+<TD ALIGN="LEFT">C:/Users/David/Desktop/Uni/MEE/ADS/VGAInterface/vga.vhd</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">Lab3.bdf</TD>
+<TD ALIGN="LEFT">yes</TD>
+<TD ALIGN="LEFT">User Block Diagram/Schematic File </TD>
+<TD ALIGN="LEFT">C:/Users/David/Desktop/Uni/MEE/ADS/VGAInterface/Lab3.bdf</TD>
+</TR>
+</TABLE>
+<P><A NAME="5"><HR></A></P>
+<TABLE WIDTH="100%" BORDER="0"><TR VALIGN="TOP">
+<TD><H2>Analysis & Synthesis Resource Usage Summary</H2></TD>
+<TD ALIGN="RIGHT"><A HREF="#top">Top</a></TD></TR></TABLE>
+<TABLE BORDER="1" cellspacing="1" cellpadding="2">
+<TR valign="middle" bgcolor="#C0C0C0">
+<TH>Resource</TH>
+<TH>Usage</TH>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">Estimated ALUTs Used</TD>
+<TD ALIGN="LEFT">48</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">Dedicated logic registers</TD>
+<TD ALIGN="LEFT">40</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">&nbsp;</TD>
+<TD ALIGN="LEFT">&nbsp;</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">Estimated ALUTs Unavailable</TD>
+<TD ALIGN="LEFT">4</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">&nbsp;</TD>
+<TD ALIGN="LEFT">&nbsp;</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">Total combinational functions</TD>
+<TD ALIGN="LEFT">48</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">Combinational ALUT usage by number of inputs</TD>
+<TD ALIGN="LEFT">&nbsp;</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">&nbsp;&nbsp;&nbsp;&nbsp;-- 7 input functions</TD>
+<TD ALIGN="LEFT">2</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">&nbsp;&nbsp;&nbsp;&nbsp;-- 6 input functions</TD>
+<TD ALIGN="LEFT">7</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">&nbsp;&nbsp;&nbsp;&nbsp;-- 5 input functions</TD>
+<TD ALIGN="LEFT">7</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">&nbsp;&nbsp;&nbsp;&nbsp;-- 4 input functions</TD>
+<TD ALIGN="LEFT">9</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">&nbsp;&nbsp;&nbsp;&nbsp;-- <=3 input functions</TD>
+<TD ALIGN="LEFT">23</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">&nbsp;</TD>
+<TD ALIGN="LEFT">&nbsp;</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">Combinational ALUTs by mode</TD>
+<TD ALIGN="LEFT">&nbsp;</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">&nbsp;&nbsp;&nbsp;&nbsp;-- normal mode</TD>
+<TD ALIGN="LEFT">24</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">&nbsp;&nbsp;&nbsp;&nbsp;-- extended LUT mode</TD>
+<TD ALIGN="LEFT">2</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">&nbsp;&nbsp;&nbsp;&nbsp;-- arithmetic mode</TD>
+<TD ALIGN="LEFT">22</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">&nbsp;&nbsp;&nbsp;&nbsp;-- shared arithmetic mode</TD>
+<TD ALIGN="LEFT">0</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">&nbsp;</TD>
+<TD ALIGN="LEFT">&nbsp;</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">Estimated ALUT/register pairs used</TD>
+<TD ALIGN="LEFT">61</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">&nbsp;</TD>
+<TD ALIGN="LEFT">&nbsp;</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">Total registers</TD>
+<TD ALIGN="LEFT">40</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">&nbsp;&nbsp;&nbsp;&nbsp;-- Dedicated logic registers</TD>
+<TD ALIGN="LEFT">40</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">&nbsp;&nbsp;&nbsp;&nbsp;-- I/O registers</TD>
+<TD ALIGN="LEFT">0</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">&nbsp;</TD>
+<TD ALIGN="LEFT">&nbsp;</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">Estimated ALMs:&nbsp; partially or completely used</TD>
+<TD ALIGN="LEFT">31</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">&nbsp;</TD>
+<TD ALIGN="LEFT">&nbsp;</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">I/O pins</TD>
+<TD ALIGN="LEFT">41</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">Maximum fan-out node</TD>
+<TD ALIGN="LEFT">clk</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">Maximum fan-out</TD>
+<TD ALIGN="LEFT">40</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">Total fan-out</TD>
+<TD ALIGN="LEFT">351</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">Average fan-out</TD>
+<TD ALIGN="LEFT">2.72</TD>
+</TR>
+</TABLE>
+<P><A NAME="6"><HR></A></P>
+<TABLE WIDTH="100%" BORDER="0"><TR VALIGN="TOP">
+<TD><H2>Analysis & Synthesis Resource Utilization by Entity</H2></TD>
+<TD ALIGN="RIGHT"><A HREF="#top">Top</a></TD></TR></TABLE>
+<TABLE BORDER="1" cellspacing="1" cellpadding="2">
+<TR valign="middle" bgcolor="#C0C0C0">
+<TH>Compilation Hierarchy Node</TH>
+<TH>LC Combinationals</TH>
+<TH>LC Registers</TH>
+<TH>Block Memory Bits</TH>
+<TH>DSP Elements</TH>
+<TH>DSP 9x9</TH>
+<TH>DSP 18x18</TH>
+<TH>DSP 36x36</TH>
+<TH>Pins</TH>
+<TH>Virtual Pins</TH>
+<TH>Full Hierarchy Name</TH>
+<TH>Library Name</TH>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">|Lab3</TD>
+<TD ALIGN="LEFT">48 (0)</TD>
+<TD ALIGN="LEFT">40 (0)</TD>
+<TD ALIGN="LEFT">0</TD>
+<TD ALIGN="LEFT">0</TD>
+<TD ALIGN="LEFT">0</TD>
+<TD ALIGN="LEFT">0</TD>
+<TD ALIGN="LEFT">0</TD>
+<TD ALIGN="LEFT">41</TD>
+<TD ALIGN="LEFT">0</TD>
+<TD ALIGN="LEFT">|Lab3</TD>
+<TD ALIGN="LEFT">work</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">&nbsp;&nbsp;&nbsp;|vga_control:inst|</TD>
+<TD ALIGN="LEFT">48 (48)</TD>
+<TD ALIGN="LEFT">40 (40)</TD>
+<TD ALIGN="LEFT">0</TD>
+<TD ALIGN="LEFT">0</TD>
+<TD ALIGN="LEFT">0</TD>
+<TD ALIGN="LEFT">0</TD>
+<TD ALIGN="LEFT">0</TD>
+<TD ALIGN="LEFT">0</TD>
+<TD ALIGN="LEFT">0</TD>
+<TD ALIGN="LEFT">|Lab3|vga_control:inst</TD>
+<TD ALIGN="LEFT">work</TD>
+</TR>
+</TABLE>
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.<br>
+<P><A NAME="7"><HR></A></P>
+<TABLE WIDTH="100%" BORDER="0"><TR VALIGN="TOP">
+<TD><H2>Registers Removed During Synthesis</H2></TD>
+<TD ALIGN="RIGHT"><A HREF="#top">Top</a></TD></TR></TABLE>
+<TABLE BORDER="1" cellspacing="1" cellpadding="2">
+<TR valign="middle" bgcolor="#C0C0C0">
+<TH>Register name</TH>
+<TH>Reason for Removal</TH>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">vga_control:inst|output_colour[11]</TD>
+<TD ALIGN="LEFT">Stuck at GND due to stuck port data_in</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">vga_control:inst|red[3]</TD>
+<TD ALIGN="LEFT">Stuck at GND due to stuck port data_in</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">vga_control:inst|output_colour[8..9]</TD>
+<TD ALIGN="LEFT">Merged with vga_control:inst|output_colour[10]</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">vga_control:inst|output_colour[4..6]</TD>
+<TD ALIGN="LEFT">Merged with vga_control:inst|output_colour[7]</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">vga_control:inst|output_colour[0..2]</TD>
+<TD ALIGN="LEFT">Merged with vga_control:inst|output_colour[3]</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">Total Number of Removed Registers = 10</TD>
+<TD ALIGN="LEFT">&nbsp;</TD>
+</TR>
+</TABLE>
+<P><A NAME="8"><HR></A></P>
+<TABLE WIDTH="100%" BORDER="0"><TR VALIGN="TOP">
+<TD><H2>Removed Registers Triggering Further Register Optimizations</H2></TD>
+<TD ALIGN="RIGHT"><A HREF="#top">Top</a></TD></TR></TABLE>
+<TABLE BORDER="1" cellspacing="1" cellpadding="2">
+<TR valign="middle" bgcolor="#C0C0C0">
+<TH>Register name</TH>
+<TH>Reason for Removal</TH>
+<TH>Registers Removed due to This Register</TH>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">vga_control:inst|output_colour[11]</TD>
+<TD ALIGN="LEFT">Stuck at GND<br>
+due to stuck port data_in</TD>
+<TD ALIGN="LEFT">vga_control:inst|red[3]</TD>
+</TR>
+</TABLE>
+<P><A NAME="9"><HR></A></P>
+<TABLE WIDTH="100%" BORDER="0"><TR VALIGN="TOP">
+<TD><H2>General Register Statistics</H2></TD>
+<TD ALIGN="RIGHT"><A HREF="#top">Top</a></TD></TR></TABLE>
+<TABLE BORDER="1" cellspacing="1" cellpadding="2">
+<TR valign="middle" bgcolor="#C0C0C0">
+<TH>Statistic</TH>
+<TH>Value</TH>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">Total registers</TD>
+<TD ALIGN="LEFT">40</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">Number of registers using Synchronous Clear</TD>
+<TD ALIGN="LEFT">22</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">Number of registers using Synchronous Load</TD>
+<TD ALIGN="LEFT">0</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">Number of registers using Asynchronous Clear</TD>
+<TD ALIGN="LEFT">25</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">Number of registers using Asynchronous Load</TD>
+<TD ALIGN="LEFT">0</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">Number of registers using Clock Enable</TD>
+<TD ALIGN="LEFT">15</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">Number of registers using Preset</TD>
+<TD ALIGN="LEFT">0</TD>
+</TR>
+</TABLE>
+<P><A NAME="10"><HR></A></P>
+<TABLE WIDTH="100%" BORDER="0"><TR VALIGN="TOP">
+<TD><H2>Analysis & Synthesis Messages</H2></TD>
+<TD ALIGN="RIGHT"><A HREF="#top">Top</a></TD></TR></TABLE>
+<PRE>
+Info: *******************************************************************
+Info: Running Quartus II Analysis & Synthesis
+    Info: Version 9.0 Build 184 04/29/2009 Service Pack 1 SJ Web Edition
+    Info: Processing started: Tue Oct 10 15:38:40 2017
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Lab3 -c Lab3
+Info: Found 2 design units, including 1 entities, in source file vga.vhd
+    Info: Found design unit 1: vga_control-arch
+    Info: Found entity 1: vga_control
+Info: Found 1 design units, including 1 entities, in source file Lab3.bdf
+    Info: Found entity 1: Lab3
+Info: Elaborating entity "Lab3" for the top level hierarchy
+Info: Elaborating entity "vga_control" for hierarchy "vga_control:inst"
+Warning: Output pins are stuck at VCC or GND
+    Warning (13410): Pin "red[3]" is stuck at GND
+Info: Implemented 102 device resources after synthesis - the final resource count might be different
+    Info: Implemented 3 input pins
+    Info: Implemented 38 output pins
+    Info: Implemented 61 logic cells
+Info: Quartus II Analysis & Synthesis was successful. 0 errors, 2 warnings
+    Info: Peak virtual memory: 266 megabytes
+    Info: Processing ended: Tue Oct 10 15:38:42 2017
+    Info: Elapsed time: 00:00:02
+    Info: Total CPU time (on all processors): 00:00:01
+</PRE>
+<HR>
+
+<A HREF="#top">Top</A>
+
+</BODY>
+
+</HTML>
+
